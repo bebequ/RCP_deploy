@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.eclipse.e4.ui.workbench.IWorkbench"/>
+<fullyQualifiedTypeName name="org.eclipse.e4.core.di.annotations.CanExecute"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.widgets.Combo"/>
+<fullyQualifiedTypeName name="org.eclipse.e4.ui.services.IServiceConstants"/>
+<fullyQualifiedTypeName name="java.util.concurrent.ExecutionException"/>
+<fullyQualifiedTypeName name="org.eclipse.core.commands.ExecutionEvent"/>
+<fullyQualifiedTypeName name="org.eclipse.e4.ui.model.application.ui.basic.MWindow"/>
+<fullyQualifiedTypeName name="org.eclipse.e4.ui.model.application.ui.advanced.MPerspective"/>
+<fullyQualifiedTypeName name="org.eclipse.e4.ui.workbench.modeling.EPartService"/>
+<fullyQualifiedTypeName name="org.eclipse.e4.ui.model.application.ui.basic.MPart"/>
+<fullyQualifiedTypeName name="org.eclipse.e4.ui.model.application.ui.MUIElement"/>
+<fullyQualifiedTypeName name="org.eclipse.e4.ui.model.application.MApplication"/>
+<fullyQualifiedTypeName name="org.eclipse.e4.ui.workbench.modeling.EModelService"/>
+<fullyQualifiedTypeName name="javax.inject.Inject"/>
+<fullyQualifiedTypeName name="org.eclipse.e4.core.di.annotations.Optional"/>
+<fullyQualifiedTypeName name="org.eclipse.e4.core.contexts.Active"/>
+<fullyQualifiedTypeName name="javax.inject.Named"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.eclipse.e4.ui.model.application.ui.menu.MHandledItem"/>
+<fullyQualifiedTypeName name="org.eclipse.core.commands.ParameterizedCommand"/>
+<fullyQualifiedTypeName name="org.eclipse.e4.core.contexts.IEclipseContext"/>
+<fullyQualifiedTypeName name="org.eclipse.core.expressions.EvaluationResult"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.widgets.Shell"/>
+<fullyQualifiedTypeName name="org.eclipse.jface.dialogs.MessageDialog"/>
+<fullyQualifiedTypeName name="org.eclipse.e4.core.di.annotations.Execute"/>
+</qualifiedTypeNameHistroy>

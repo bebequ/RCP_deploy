@@ -1,0 +1,156 @@
+package com.nebula.test;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
+import org.eclipse.draw2d.LightweightSystem;
+import org.eclipse.e4.ui.di.Focus;
+import org.eclipse.nebula.visualization.xygraph.dataprovider.CircularBufferDataProvider;
+import org.eclipse.nebula.visualization.xygraph.figures.ToolbarArmedXYGraph;
+import org.eclipse.nebula.visualization.xygraph.figures.Trace;
+import org.eclipse.nebula.visualization.xygraph.figures.Trace.PointStyle;
+import org.eclipse.nebula.visualization.xygraph.figures.Trace.TraceType;
+import org.eclipse.nebula.visualization.xygraph.figures.XYGraph;
+import org.eclipse.nebula.visualization.xygraph.util.XYGraphMediaFactory;
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.graphics.Color;
+import org.eclipse.swt.graphics.RGB;
+import org.eclipse.swt.layout.FillLayout;
+import org.eclipse.swt.layout.GridLayout;
+import org.eclipse.swt.widgets.Canvas;
+import org.eclipse.swt.widgets.Composite;
+import org.eclipse.swt.widgets.Text;
+
+public class DemoMain {
+
+	public DemoMain() {
+	}
+
+	/**
+	 * Create contents of the view part.
+	 */
+	private double mTarget = 2.1;
+	private double[][] mBufferLow = new double[3][];
+	private double[][] mBufferHigh = new double[3][];	
+	private double[] mIndex = new double[256];
+	private String[] mP0Mark = {"R0", "G0", "B0"};
+	private String[] mP1Mark = {"R1", "G1", "B1"};
+	private RGB[] mXYColor = {XYGraphMediaFactory.COLOR_PINK};
+	@PostConstruct
+	public void createControls(Composite parent) {
+		for(int i=0; i<mBufferLow.length; i++)
+		{
+			mBufferLow[i] = new double[256];
+			for(int j=0; j<mBufferLow[i].length; j++)
+			{
+				mBufferLow[i][j] = Math.pow(j/255.0, mTarget+i*0.5+0.1);
+			}
+		}
+		for(int i=0; i<mBufferLow.length; i++)
+		{
+			mBufferHigh[i] = new double[256];
+			for(int j=0; j<mBufferHigh[i].length; j++)
+			{
+				mBufferHigh[i][j] = Math.pow(j/255.0, mTarget+i*0.3);
+			}
+		}
+		for(int i=0; i<mIndex.length; i++)
+		{
+			mIndex[i] = i;
+		}
+		
+		
+		FillLayout layout = new FillLayout();
+		parent.setLayout(layout);
+		
+		final Canvas canvas = new Canvas(parent, SWT.NONE);
+        final LightweightSystem lws = new LightweightSystem(canvas);
+ 
+        XYGraph xyGraph = new XYGraph();
+ 
+        //ToolbarArmedXYGraph toolbarArmedXYGraph = new ToolbarArmedXYGraph(xyGraph);
+ 
+        xyGraph.setTitle("Correct Curve");
+ 
+        lws.setContents(xyGraph);
+        //lws.setContents(toolbarArmedXYGraph);
+ 
+        xyGraph.primaryXAxis.setShowMajorGrid(true);
+        xyGraph.primaryYAxis.setShowMajorGrid(true);
+        xyGraph.primaryXAxis.setRange(0, 255);
+        xyGraph.primaryYAxis.setRange(0, 1);
+        /*
+        CircularBufferDataProvider traceDataProvider = new CircularBufferDataProvider(false);
+        traceDataProvider.setBufferSize(256);
+        //traceDataProvider.setCurrentXDataArray(new double[] { 0, 1, 2, 3, 4, 5, 6, 7 });
+        //traceDataProvider.setCurrentYDataArray(new double[] { 1.1, 4.4, 5.5, 4.5, 8.8, 9.8, 5.2, 2.3 });
+        traceDataProvider.setCurrentXDataArray(mIndex);
+        
+        for(int i=0;i<mBuffer.length; i++)
+        {
+	        traceDataProvider.setCurrentYDataArray(mBuffer[i]);
+	        
+	        // create the trace
+	        Trace trace = new Trace("Gamma R0", xyGraph.primaryXAxis, xyGraph.primaryYAxis, traceDataProvider);
+	        // set trace property
+	        trace.setPointStyle(PointStyle.NONE);
+	        trace.setTraceColor(new Color(parent.getDisplay(), 255,0,0));
+	        // add the trace to xyGraph
+	        xyGraph.addTrace(trace);
+        }
+        */
+        for(int i=0; i<mBufferLow.length; i++)
+        {
+        	
+            CircularBufferDataProvider traceDataProvider = new CircularBufferDataProvider(false);
+            traceDataProvider.setBufferSize(256);
+            traceDataProvider.setCurrentXDataArray(mIndex);
+            traceDataProvider.setCurrentYDataArray(mBufferLow[i]);
+            Trace trace = new Trace("Gamma "+ mP0Mark[i], xyGraph.primaryXAxis, xyGraph.primaryYAxis, traceDataProvider);
+            trace.setPointStyle(PointStyle.NONE);
+          
+            trace.setTraceColor(XYGraphMediaFactory.getInstance().getColor(XYGraphMediaFactory.COLOR_PINK));
+            //trace.setTraceColor(new Color(parent.getDisplay(), 255,0,0));
+            xyGraph.addTrace(trace);
+        }
+        /*
+        CircularBufferDataProvider traceDataProvider0 = new CircularBufferDataProvider(false);
+        traceDataProvider0.setBufferSize(256);
+        traceDataProvider0.setCurrentXDataArray(mIndex);
+        traceDataProvider0.setCurrentYDataArray(mBufferLow[0]);
+        Trace trace0 = new Trace("Gamma R0", xyGraph.primaryXAxis, xyGraph.primaryYAxis, traceDataProvider0);
+        trace0.setPointStyle(PointStyle.NONE);
+        trace0.setTraceColor(new Color(parent.getDisplay(), 255,0,0));
+        xyGraph.addTrace(trace0);
+        
+        
+        CircularBufferDataProvider traceDataProvider1 = new CircularBufferDataProvider(false);
+        traceDataProvider1.setBufferSize(256);
+        traceDataProvider1.setCurrentXDataArray(mIndex);
+        traceDataProvider1.setCurrentYDataArray(mBufferLow[1]);
+        Trace trace1 = new Trace("Gamma G0", xyGraph.primaryXAxis, xyGraph.primaryYAxis, traceDataProvider1);
+        trace1.setPointStyle(PointStyle.NONE);
+        trace1.setTraceColor(new Color(parent.getDisplay(), 0,255,0));
+        xyGraph.addTrace(trace1);
+        
+        CircularBufferDataProvider traceDataProvider2 = new CircularBufferDataProvider(false);
+        traceDataProvider2.setBufferSize(256);
+        traceDataProvider2.setCurrentXDataArray(mIndex);
+        traceDataProvider2.setCurrentYDataArray(mBufferLow[2]);
+        Trace trace2 = new Trace("Gamma B0", xyGraph.primaryXAxis, xyGraph.primaryYAxis, traceDataProvider2);
+        trace2.setPointStyle(PointStyle.NONE);
+        trace2.setTraceColor(new Color(parent.getDisplay(), 0,0,255));
+        xyGraph.addTrace(trace2);
+        */
+	}
+
+	@PreDestroy
+	public void dispose() {
+	}
+
+	@Focus
+	public void setFocus() {
+		// TODO	Set the focus to control
+	}
+
+}

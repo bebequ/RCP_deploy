@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;com.vogella.tycho.rcp.product&apos; to &apos;com.vogella.tycho.product&apos;" description="Move &apos;com.vogella.tycho.rcp.product&apos; to &apos;com.vogella.tycho.product&apos;" destination="releng/com.vogella.tycho.product" element1="bundles/com.vogella.tycho.rcp/com.vogella.tycho.rcp.product" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1496967512535" updateReferences="true"/>
+</session>

@@ -1,0 +1,146 @@
+package com.nebula.test;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
+import org.eclipse.draw2d.LightweightSystem;
+import org.eclipse.e4.ui.di.Focus;
+import org.eclipse.nebula.visualization.xygraph.dataprovider.CircularBufferDataProvider;
+import org.eclipse.nebula.visualization.xygraph.figures.ToolbarArmedXYGraph;
+import org.eclipse.nebula.visualization.xygraph.figures.Trace;
+import org.eclipse.nebula.visualization.xygraph.figures.Trace.PointStyle;
+import org.eclipse.nebula.visualization.xygraph.figures.Trace.TraceType;
+import org.eclipse.nebula.visualization.xygraph.figures.XYGraph;
+import org.eclipse.nebula.visualization.xygraph.util.XYGraphMediaFactory;
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.graphics.Color;
+import org.eclipse.swt.graphics.RGB;
+import org.eclipse.swt.layout.FillLayout;
+import org.eclipse.swt.layout.GridLayout;
+import org.eclipse.swt.widgets.Canvas;
+import org.eclipse.swt.widgets.Composite;
+import org.eclipse.swt.widgets.Text;
+import org.eclipse.swt.layout.RowLayout;
+import org.eclipse.swt.widgets.Group;
+import org.eclipse.swt.widgets.Button;
+import org.eclipse.draw2d.XYLayout;
+import org.eclipse.swt.layout.RowData;
+import org.eclipse.swt.layout.GridData;
+import org.eclipse.swt.events.SelectionAdapter;
+import org.eclipse.swt.events.SelectionEvent;
+
+public class DemoMain {
+
+	public DemoMain() {
+	}
+
+	/**
+	 * Create contents of the view part.
+	 */
+	private double mTarget = 2.1;
+	private double[][] mBufferLow = new double[3][];
+	private double[][] mBufferHigh = new double[3][];	
+	private double[] mIndex = new double[256];
+	private String[] mP0Mark = {"R0", "G0", "B0"};
+	private String[] mP1Mark = {"R1", "G1", "B1"};
+	private RGB[] mXYColorLow = {XYGraphMediaFactory.COLOR_RED, XYGraphMediaFactory.COLOR_GREEN, XYGraphMediaFactory.COLOR_BLUE};
+	private RGB[] mXYColorHigh = {XYGraphMediaFactory.COLOR_PURPLE, XYGraphMediaFactory.COLOR_YELLOW, XYGraphMediaFactory.COLOR_CYAN};
+	
+	@PostConstruct
+	public void createControls(Composite parent) {
+		for(int i=0; i<mBufferLow.length; i++)
+		{
+			mBufferLow[i] = new double[256];
+			for(int j=0; j<mBufferLow[i].length; j++)
+			{
+				mBufferLow[i][j] = Math.pow(j/255.0, mTarget+i*0.5+0.5);
+			}
+		}
+		for(int i=0; i<mBufferLow.length; i++)
+		{
+			mBufferHigh[i] = new double[256];
+			for(int j=0; j<mBufferHigh[i].length; j++)
+			{
+				mBufferHigh[i][j] = Math.pow(j/255.0, mTarget+i*0.3);
+			}
+		}
+		for(int i=0; i<mIndex.length; i++)
+		{
+			mIndex[i] = i;
+		}
+		parent.setLayout(new GridLayout(1, false));
+		
+		final Canvas canvas = new Canvas(parent, SWT.NONE);
+		canvas.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, true, 1, 1));
+        final LightweightSystem lws = new LightweightSystem(canvas);
+        
+        Group group = new Group(parent, SWT.NONE);
+        group.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
+        group.setLayout(new FillLayout(SWT.HORIZONTAL));
+        
+        Button btnCheckButton = new Button(group, SWT.CHECK);
+      
+        Button btnCheckButton_1 = new Button(group, SWT.CHECK);
+            
+        Button btnCheckButton_2 = new Button(group, SWT.CHECK);
+  
+ 
+        XYGraph xyGraph = new XYGraph();
+        xyGraph.setTitle("Correct Gamma Curve");
+        lws.setContents(xyGraph);
+        //ToolbarArmedXYGraph toolbarArmedXYGraph = new ToolbarArmedXYGraph(xyGraph);
+        //lws.setContents(toolbarArmedXYGraph);
+ 
+        xyGraph.getPrimaryXAxis().setShowMajorGrid(true);
+        xyGraph.getPrimaryYAxis().setShowMajorGrid(true);
+        xyGraph.getPrimaryXAxis().setRange(0, 255);
+        xyGraph.getPrimaryYAxis().setRange(0, 1);
+        xyGraph.getPrimaryXAxis().setTitle("index");
+        xyGraph.getPrimaryYAxis().setTitle("mag");
+        
+        for(int i=0; i<mBufferLow.length; i++)
+        {
+        	
+            CircularBufferDataProvider traceDataProvider = new CircularBufferDataProvider(false);
+            traceDataProvider.setBufferSize(256);
+            traceDataProvider.setCurrentXDataArray(mIndex);
+            traceDataProvider.setCurrentYDataArray(mBufferLow[i]);
+            Trace trace = new Trace("Gamma "+ mP0Mark[i], xyGraph.getPrimaryXAxis(), xyGraph.getPrimaryYAxis(), traceDataProvider);
+            trace.setPointStyle(PointStyle.NONE);
+            trace.setTraceColor(XYGraphMediaFactory.getInstance().getColor(mXYColorLow[i]));
+            xyGraph.addTrace(trace);
+        }
+        for(int i=0; i<mBufferHigh.length; i++)
+        {
+        	
+            CircularBufferDataProvider traceDataProvider = new CircularBufferDataProvider(false);
+            traceDataProvider.setBufferSize(256);
+            traceDataProvider.setCurrentXDataArray(mIndex);
+            traceDataProvider.setCurrentYDataArray(mBufferHigh[i]);
+            Trace trace = new Trace("Gamma "+ mP1Mark[i], xyGraph.getPrimaryXAxis(), xyGraph.getPrimaryYAxis(), traceDataProvider);
+            trace.setPointStyle(PointStyle.NONE);
+            trace.setTraceColor(XYGraphMediaFactory.getInstance().getColor(mXYColorHigh[i]));
+            xyGraph.addTrace(trace);
+        }
+        
+        btnCheckButton.addSelectionListener(new SelectionAdapter() {
+        	@Override
+        	public void widgetSelected(SelectionEvent e) {
+        		xyGraph.remove(0);
+        	}
+        });
+        btnCheckButton.setText("R0");
+        btnCheckButton_1.setText("G0");
+        btnCheckButton_2.setText("B0");
+	}
+
+	@PreDestroy
+	public void dispose() {
+	}
+
+	@Focus
+	public void setFocus() {
+		// TODO	Set the focus to control
+	}
+
+}
