@@ -1,139 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="3.5 or greater" key="targetName"/>
-	<item value="false" key="uiPlugin"/>
-	<item value="false" key="OrganizeManifests.ExportedPackages.removeUnresolved"/>
-	<item value="true" key="rcpPlugin"/>
-	<item value="false" key="OrganizeManifests.RequireImport.modifyDep"/>
-	<item value="false" key="osgiProject"/>
-	<item value="false" key="OrganizeManifests.General.cleanup.removeUselessFiles"/>
-	<item value="false" key="OrganizeManifests.RequireImport.findRemoveUnused"/>
-	<item value="false" key="OrganizeManifests.calculateUses"/>
-	<item value="false" key="initLaunch"/>
-	<item value="false" key="OrganizeManifests.ExportedPackages.addMissing"/>
-	<item value="false" key="OrganizeManifests.General.cleanup"/>
-	<item value="false" key="OrganizeManifests.Translation.nls"/>
-	<item value="false" key="apiAnalysis"/>
-	<item value="*.internal*" key="OrganizeManifests.ExportedPackages.packageFilter"/>
-	<item value="false" key="OrganizeManifests.AddDependencies"/>
-	<item value="false" key="OrganizeManifests.Translation.unusedKeys"/>
-	<item value="false" key="OrganizeManifests.ExportedPackages.makeInternal"/>
-	<item value="false" key="generatePluginActivator"/>
-	<item value="false" key="OrganizeManifests.RequireImport.resolve:markOptional"/>
-	<list key="providers">
-		<item value="EXAMPLE"/>
-		<item value="VOGELLA"/>
-		<item value="TEST"/>
-		<item value="RAON"/>
-		<item value="TMP"/>
-		<item value="RAONTECH"/>
-	</list>
-	<section name="org.eclipse.ltk.ui.refactoring.settings">
-	</section>
-	<section name="RefactoringWizard.Organize Manifests">
-		<item value="600" key="width"/>
-		<item value="450" key="height"/>
-	</section>
-	<section name="org.eclipse.pde.ui.dialogs.FeatureSelectionDialog">
-		<item value="true" key="ShowStatusLine"/>
-		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History/&gt;" key="History"/>
-		<section name="DialogBoundsSettings">
-			<item value="600" key="DIALOG_WIDTH"/>
-			<item value="1|.SF NS Text|11.0|0|COCOA|1|.SFNSText" key="DIALOG_FONT_NAME"/>
-			<item value="500" key="DIALOG_HEIGHT"/>
-			<item value="617" key="DIALOG_X_ORIGIN"/>
-			<item value="191" key="DIALOG_Y_ORIGIN"/>
-		</section>
-	</section>
 	<section name="PDEFormActionManager">
 	</section>
 	<section name="org.eclipse.pde.ui.PLUGIN_STATUS_DIALOG">
-		<item value="400" key="DIALOG_WIDTH"/>
-		<item value="1|.SF NS Text|11.0|0|COCOA|1|.SFNSText" key="DIALOG_FONT_NAME"/>
-		<item value="372" key="DIALOG_HEIGHT"/>
-		<item value="155" key="DIALOG_X_ORIGIN"/>
-		<item value="294" key="DIALOG_Y_ORIGIN"/>
-	</section>
-	<section name="pde-form-editor">
-		<item value="overview" key="org.eclipse.pde.ui.manifestEditor"/>
-	</section>
-	<section name="org.eclipse.pde.ui.dialogs.PluginSelectionDialog">
-		<item value="true" key="ShowStatusLine"/>
-		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History/&gt;" key="History"/>
-		<section name="DialogBoundsSettings">
-			<item value="600" key="DIALOG_WIDTH"/>
-			<item value="1|.SF NS Text|11.0|0|COCOA|1|.SFNSText" key="DIALOG_FONT_NAME"/>
-			<item value="500" key="DIALOG_HEIGHT"/>
-			<item value="428" key="DIALOG_X_ORIGIN"/>
-			<item value="378" key="DIALOG_Y_ORIGIN"/>
-		</section>
+		<item value="413" key="DIALOG_WIDTH"/>
+		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-24|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
+		<item value="385" key="DIALOG_HEIGHT"/>
+		<item value="327" key="DIALOG_X_ORIGIN"/>
+		<item value="64" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="ProductExportWizard">
-		<item value="/Users/jpark/Desktop/NewBuild" key="destination0"/>
+		<item value="C:\Users\jpark.RAON-TECH\workspace\NewBuild" key="destination0"/>
 		<item value="true" key="syncProduct"/>
-		<item value="/Users/jpark/Desktop/NewBuild" key="destination1"/>
-		<item value="/Users/jpark/workspace/Test_RCP" key="destination4"/>
+		<item value="C:\Users\jpark.RAON-TECH\workspace\OldBuild" key="destination1"/>
+		<item value="true" key="allowBinaryCycles"/>
 		<item value="Generate source bundles" key="exportSourceFormat"/>
-		<item value="/Users/jpark/Desktop/OldBuild" key="destination2"/>
+		<item value="C:\Users\jpark.RAON-TECH\workspace\NewBuild" key="destination2"/>
+		<item value="/com.example.p2.core/com.example.p2.core.product" key="productConfig1"/>
 		<item value="eclipse" key="productRoot"/>
-		<item value="/Users/jpark/Desktop" key="destination3"/>
 		<item value="/com.example.p2.core/com.example.p2.core.product" key="productConfig0"/>
 		<item value="false" key="exportSource"/>
 		<item value="true" key="exportDirectory"/>
-		<item value="true" key="allowBinaryCycles"/>
-		<item value="/Users/jpark/Desktop/p2_terst.zip" key="zipFileName0"/>
-		<item value="/Users/jpark/Desktop/p2_terst.zip" key="zipFileName1"/>
-		<item value="/Users/jpark/Desktop/:Users:jpark:Desktop:Users:jpark:workspace:Test_RCP.zip" key="zipFileName2"/>
-		<item value="/com.example.p2.core/com.example.p2.core.product" key="productConfig1"/>
-		<item value="/Users/jpark/Desktop/:Users:jpark:workspace:Test_RCP.zip" key="zipFileName3"/>
 		<item value="true" key="p2metadata"/>
-	</section>
-	<section name="PluginExportWizard">
-		<item value="/Users/jpark/Desktop" key="destination0"/>
-		<item value="/Users/jpark/Desktop" key="destination1"/>
-		<item value="" key="keypass"/>
-		<item value="Generate source bundles" key="exportSourceFormat"/>
-		<item value="false" key="signJAR"/>
-		<item value="true" key="exportUpdate"/>
-		<item value="false" key="saveAsAnt"/>
-		<item value="false" key="exportSource"/>
-		<item value="true" key="allowBinaryCycles"/>
-		<item value="" key="password"/>
-		<item value="201706201804" key="qualifierName"/>
-		<item value="/Users/jpark/Desktop/:Users:jpark:workspace:Test_RCP.zip" key="zipFileName0"/>
-		<item value="false" key="useWorkspaceCompiledClasses"/>
-		<item value="/Users/jpark/Desktop/:Users:jpark:workspace:Test_RCP.zip" key="zipFileName1"/>
-		<item value="1" key="exportType"/>
-		<item value="false" key="qualifier"/>
-		<item value="" key="alias"/>
-		<item value="" key="keystore"/>
 	</section>
 	<section name="quick_assist_proposal_size">
-	</section>
-	<section name="FeatureExportWizard">
-		<item value="/Users/jpark/Desktop" key="destination0"/>
-		<item value="/Users/jpark/Desktop" key="destination1"/>
-		<item value="" key="keypass"/>
-		<item value="" key="siteURL"/>
-		<item value="true" key="create_categories"/>
-		<item value="Generate source bundles" key="exportSourceFormat"/>
-		<item value="false" key="signJAR"/>
-		<item value="true" key="exportUpdate"/>
-		<item value="false" key="saveAsAnt"/>
-		<item value="false" key="exportSource"/>
-		<item value="/Users/jpark/workspace/Test_RCP/com.vogella.plugin.first.feature/category.xml" key="category_file"/>
-		<item value="true" key="allowBinaryCycles"/>
-		<item value="" key="password"/>
-		<item value="201706201815" key="qualifierName"/>
-		<item value="false" key="useWorkspaceCompiledClasses"/>
-		<item value="1" key="exportType"/>
-		<item value="false" key="qualifier"/>
-		<item value="" key="alias"/>
-		<item value="false" key="jnlp"/>
-		<item value="" key="keystore"/>
-		<item value="" key="jre"/>
-		<item value="true" key="p2metadata"/>
-	</section>
-	<section name="pluginsView">
 	</section>
 </section>

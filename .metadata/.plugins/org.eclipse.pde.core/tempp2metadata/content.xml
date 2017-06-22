@@ -1,35 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?metadataRepository version='1.1.0'?>
-<repository name='file:/Users/jpark/workspace/Test_RCP/.metadata/.plugins/org.eclipse.pde.core/tempp2metadata - metadata' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1.0.0'>
+<repository name='file:/C:/Users/jpark.RAON-TECH/workspace/RCP_deploy/.metadata/.plugins/org.eclipse.pde.core/tempp2metadata - metadata' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1.0.0'>
   <properties size='2'>
-    <property name='p2.timestamp' value='1498052079128'/>
+    <property name='p2.timestamp' value='1498092794395'/>
     <property name='p2.compressed' value='false'/>
   </properties>
   <references size='2'>
     <repository uri='http://www.eclipse.org/modeling/updates/' url='http://www.eclipse.org/modeling/updates/' type='0' options='0'/>
     <repository uri='http://www.eclipse.org/modeling/updates/' url='http://www.eclipse.org/modeling/updates/' type='1' options='0'/>
   </references>
-  <units size='149'>
-    <unit id='toolingcom.example.p2.core.product.ini.cocoa.macosx.x86_64' version='1.0.5.201706212234' singleton='false'>
-      <provides size='2'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='toolingcom.example.p2.core.product.ini.cocoa.macosx.x86_64' version='1.0.5.201706212234'/>
-        <provided namespace='toolingcom.example.p2.core.product' name='com.example.p2.core.product.ini' version='1.0.5.201706212234'/>
-      </provides>
-      <filter>
-        (&amp;(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))
-      </filter>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='2'>
-          <instruction key='configure'>
-            addJvmArg(jvmArg:-XstartOnFirstThread);addJvmArg(jvmArg:-Dorg.eclipse.swt.internal.carbon.smallFonts);addProgramArg(programArg:-clearPersistedState);
-          </instruction>
-          <instruction key='unconfigure'>
-            removeJvmArg(jvmArg:-XstartOnFirstThread);removeJvmArg(jvmArg:-Dorg.eclipse.swt.internal.carbon.smallFonts);removeProgramArg(programArg:-clearPersistedState);
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
+  <units size='148'>
     <unit id='org.eclipse.e4.ui.css.swt.theme' version='0.10.100.v20160523-0836'>
       <update id='org.eclipse.e4.ui.css.swt.theme' range='[0.0.0,0.10.100.v20160523-0836)' severity='0'/>
       <properties size='5'>
@@ -215,12 +195,12 @@
       </provides>
       <requires size='14'>
         <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.equinox.launcher' range='[1.3.201.v20161025-1711,1.3.201.v20161025-1711]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.equinox.launcher.cocoa.macosx.x86_64' range='[1.1.401.v20161122-1740,1.1.401.v20161122-1740]'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.equinox.launcher.win32.win32.x86_64' range='[1.1.401.v20161122-1740,1.1.401.v20161122-1740]'>
           <filter>
-            (&amp;(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))
+            (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
           </filter>
         </required>
-        <required namespace='org.eclipse.equinox.p2.iu' name='com.example.p2.feature.feature.group' range='[1.0.0.201706212234,1.0.0.201706212234]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.example.p2.feature.feature.group' range='[1.0.0.201706220953,1.0.0.201706220953]'/>
         <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.e4.rcp.feature.group' range='[1.5.3.v20170228-0512,1.5.3.v20170228-0512]'/>
         <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.equinox.p2.core.feature.feature.group' range='[1.3.203.v20170131-1444,1.3.203.v20170131-1444]'/>
         <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.emf.ecore.feature.group' range='[2.12.0.v20160420-0247,2.12.0.v20160420-0247]'/>
@@ -231,9 +211,9 @@
         <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.emf.common.feature.group' range='[2.12.0.v20160420-0247,2.12.0.v20160420-0247]'/>
         <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ecf.core.feature.feature.group' range='[1.3.0.v20160823-2221,1.3.0.v20160823-2221]'/>
         <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ecf.filetransfer.feature.feature.group' range='[3.13.2.v20160823-2221,3.13.2.v20160823-2221]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.pde.container.feature_root.cocoa.macosx.x86_64' range='[1.0.0,1.0.0]'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.pde.container.feature_root.win32.win32.x86_64' range='[1.0.0,1.0.0]'>
           <filter>
-            (&amp;(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))
+            (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
           </filter>
         </required>
       </requires>
@@ -430,6 +410,24 @@
         %copyright
       </copyright>
     </unit>
+    <unit id='toolingcom.example.p2.core.product.configuration' version='1.0.7.201706220953'>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='toolingcom.example.p2.core.product.configuration' version='1.0.7.201706220953'/>
+      </provides>
+      <requires size='2'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='toolingcom.example.p2.core.product.ini.win32.win32.x86_64' range='[1.0.7.201706220953,1.0.7.201706220953]'>
+          <filter>
+            (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
+          </filter>
+        </required>
+        <required namespace='org.eclipse.equinox.p2.iu' name='toolingcom.example.p2.core.product.config.win32.win32.x86_64' range='[1.0.7.201706220953,1.0.7.201706220953]'>
+          <filter>
+            (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+    </unit>
     <unit id='org.eclipse.emf.ecore.xmi' version='2.12.0.v20160420-0247'>
       <update id='org.eclipse.emf.ecore.xmi' range='[0.0.0,2.12.0.v20160420-0247)' severity='0'/>
       <properties size='5'>
@@ -495,6 +493,44 @@
         <instructions size='1'>
           <instruction key='manifest'>
             Bundle-SymbolicName: org.w3c.dom.events&#xA;Bundle-Version: 3.0.0.draft20060413_v201105210656
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='com.example.p2.core' version='1.0.0.201706220953'>
+      <update id='com.example.p2.core' range='[0.0.0,1.0.0.201706220953)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='Core'/>
+        <property name='org.eclipse.equinox.p2.provider' value='EXAMPLE'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='com.example.p2.core' version='1.0.0.201706220953'/>
+        <provided namespace='osgi.bundle' name='com.example.p2.core' version='1.0.0.201706220953'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='13'>
+        <required namespace='osgi.bundle' name='javax.inject' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.e4.ui.model.workbench' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jface' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.e4.ui.services' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.e4.ui.workbench' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.e4.core.di' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.e4.ui.di' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.e4.core.contexts' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.equinox.p2.core' range='2.4.100'/>
+        <required namespace='osgi.bundle' name='org.eclipse.equinox.p2.engine' range='2.4.100'/>
+        <required namespace='osgi.bundle' name='org.eclipse.equinox.p2.operations' range='2.4.200'/>
+        <required namespace='osgi.bundle' name='org.eclipse.equinox.p2.metadata.repository' range='1.2.300'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='com.example.p2.core' version='1.0.0.201706220953'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: com.example.p2.core;singleton:=true&#xA;Bundle-Version: 1.0.0.201706220953
           </instruction>
         </instructions>
       </touchpointData>
@@ -582,26 +618,6 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='toolingcom.example.p2.core.product.config.cocoa.macosx.x86_64' version='1.0.5.201706212234' singleton='false'>
-      <provides size='2'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='toolingcom.example.p2.core.product.config.cocoa.macosx.x86_64' version='1.0.5.201706212234'/>
-        <provided namespace='toolingcom.example.p2.core.product' name='com.example.p2.core.product.config' version='1.0.5.201706212234'/>
-      </provides>
-      <filter>
-        (&amp;(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))
-      </filter>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='2'>
-          <instruction key='configure'>
-            setProgramProperty(propName:eclipse.product,propValue:com.example.p2.core.product);setProgramProperty(propName:eclipse.application,propValue:org.eclipse.e4.ui.workbench.swt.E4Application);addRepository(type:0,location:file${#58}/Users/jpark/workspace/,enabled:true);addRepository(type:1,location:file${#58}/Users/jpark/workspace/,enabled:true);
-          </instruction>
-          <instruction key='unconfigure'>
-            setProgramProperty(propName:eclipse.product,propValue:);setProgramProperty(propName:eclipse.application,propValue:);removeRepository(type:0,location:file${#58}/Users/jpark/workspace/);removeRepository(type:1,location:file${#58}/Users/jpark/workspace/);
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
     <unit id='org.eclipse.osgi.services' version='3.5.100.v20160504-1419' singleton='false'>
       <update id='org.eclipse.osgi.services' range='[0.0.0,3.5.100.v20160504-1419)' severity='0'/>
       <properties size='9'>
@@ -664,6 +680,41 @@
         <instructions size='1'>
           <instruction key='manifest'>
             Bundle-SymbolicName: org.eclipse.osgi.services&#xA;Bundle-Version: 3.5.100.v20160504-1419
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='toolingorg.eclipse.osgi' version='1.0.7.201706220953' singleton='false'>
+      <hostRequirements size='2'>
+        <required namespace='osgi.bundle' name='org.eclipse.osgi' range='[3.11.3.v20170209-1843,3.11.3.v20170209-1843]' greedy='false'/>
+        <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
+      </hostRequirements>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
+        <property name='org.eclipse.pde.build.default' value='true'/>
+      </properties>
+      <provides size='2'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.osgi' version='1.0.7.201706220953'/>
+        <provided namespace='org.eclipse.equinox.p2.flavor' name='tooling' version='1.0.0'/>
+      </provides>
+      <requires size='2'>
+        <required namespace='osgi.bundle' name='org.eclipse.osgi' range='[3.11.3.v20170209-1843,3.11.3.v20170209-1843]' greedy='false'/>
+        <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='4'>
+          <instruction key='uninstall'>
+            uninstallBundle(bundle:${artifact});
+          </instruction>
+          <instruction key='install'>
+            installBundle(bundle:${artifact});
+          </instruction>
+          <instruction key='configure'>
+            setStartLevel(startLevel:-1);markStarted(started:true);
+          </instruction>
+          <instruction key='unconfigure'>
+            setStartLevel(startLevel:-1);markStarted(started:false);
           </instruction>
         </instructions>
       </touchpointData>
@@ -819,6 +870,97 @@
         <instructions size='1'>
           <instruction key='manifest'>
             Bundle-SymbolicName: org.apache.felix.gogo.runtime&#xA;Bundle-Version: 0.10.0.v201209301036
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.eclipse.equinox.security.win32.x86_64' version='1.0.100.v20130327-1442'>
+      <update id='org.eclipse.equinox.security.win32.x86_64' range='[0.0.0,1.0.100.v20130327-1442)' severity='0'/>
+      <properties size='5'>
+        <property name='df_LT.fragmentName' value='Windows Data Protection services integration (64 bit)'/>
+        <property name='df_LT.providerName' value='Eclipse.org - Equinox'/>
+        <property name='org.eclipse.equinox.p2.name' value='%fragmentName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='fragment'/>
+      </properties>
+      <provides size='6'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.equinox.security.win32.x86_64' version='1.0.100.v20130327-1442'/>
+        <provided namespace='osgi.bundle' name='org.eclipse.equinox.security.win32.x86_64' version='1.0.100.v20130327-1442'/>
+        <provided namespace='java.package' name='org.eclipse.equinox.internal.security.win32' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='osgi.fragment' name='org.eclipse.equinox.security' version='1.0.100.v20130327-1442'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='osgi.bundle' name='org.eclipse.equinox.security' range='[1.0.0,2.0.0)'/>
+      </requires>
+      <filter>
+        (&amp;(osgi.arch=x86_64)(osgi.os=win32))
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.eclipse.equinox.security.win32.x86_64' version='1.0.100.v20130327-1442'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: org.eclipse.equinox.security.win32.x86_64;singleton:=true&#xA;Bundle-Version: 1.0.100.v20130327-1442&#xA;Fragment-Host: org.eclipse.equinox.security;bundle-version=&quot;[1.0.0,2.0.0)&quot;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.eclipse.swt.win32.win32.x86_64' version='3.105.3.v20170228-0512'>
+      <update id='org.eclipse.swt.win32.win32.x86_64' range='[0.0.0,3.105.3.v20170228-0512)' severity='0'/>
+      <properties size='5'>
+        <property name='df_LT.fragmentName' value='Standard Widget Toolkit for Windows'/>
+        <property name='df_LT.providerName' value='Eclipse.org'/>
+        <property name='org.eclipse.equinox.p2.name' value='%fragmentName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='fragment'/>
+      </properties>
+      <provides size='27'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.swt.win32.win32.x86_64' version='3.105.3.v20170228-0512'/>
+        <provided namespace='osgi.bundle' name='org.eclipse.swt.win32.win32.x86_64' version='3.105.3.v20170228-0512'/>
+        <provided namespace='java.package' name='org.eclipse.swt' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.swt.accessibility' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.swt.awt' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.swt.browser' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.swt.custom' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.swt.dnd' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.swt.events' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.swt.graphics' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.swt.layout' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.swt.opengl' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.swt.printing' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.swt.program' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.swt.widgets' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.swt.internal' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.swt.internal.image' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.swt.internal.theme' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.swt.internal.mozilla' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.swt.ole.win32' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.swt.internal.gdip' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.swt.internal.ole.win32' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.swt.internal.win32' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.swt.internal.opengl.win32' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='osgi.fragment' name='org.eclipse.swt' version='3.105.3.v20170228-0512'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='osgi.bundle' name='org.eclipse.swt' range='[3.0.0,4.0.0)'/>
+      </requires>
+      <filter>
+        (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.eclipse.swt.win32.win32.x86_64' version='3.105.3.v20170228-0512'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: org.eclipse.swt.win32.win32.x86_64; singleton:=true&#xA;Bundle-Version: 3.105.3.v20170228-0512&#xA;Fragment-Host: org.eclipse.swt; bundle-version=&quot;[3.0.0,4.0.0)&quot;
           </instruction>
         </instructions>
       </touchpointData>
@@ -1221,24 +1363,25 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='com.example.p2.core.product_root.cocoa.macosx.x86_64' version='1.0.5.201706212234'>
-      <provides size='1'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='com.example.p2.core.product_root.cocoa.macosx.x86_64' version='1.0.5.201706212234'/>
+    <unit id='toolingcom.example.p2.core.product_root.win32.win32.x86_64' version='1.0.7.201706220953' singleton='false'>
+      <properties size='1'>
+        <property name='org.eclipse.pde.build.default' value='true'/>
+      </properties>
+      <provides size='2'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='toolingcom.example.p2.core.product_root.win32.win32.x86_64' version='1.0.7.201706220953'/>
+        <provided namespace='org.eclipse.equinox.p2.flavor' name='tooling' version='1.0.0'/>
       </provides>
       <filter>
-        (&amp;(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))
+        (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
       </filter>
-      <artifacts size='1'>
-        <artifact classifier='binary' id='com.example.p2.core.product_root.cocoa.macosx.x86_64' version='1.0.5.201706212234'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.native' version='1.0.0'/>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
         <instructions size='2'>
-          <instruction key='uninstall'>
-            cleanupzip(source:@artifact, target:${installFolder}/../);
+          <instruction key='configure'>
+            setLauncherName(name:eclipse)
           </instruction>
-          <instruction key='install'>
-            unzip(source:@artifact, target:${installFolder}/../); chmod(targetDir:${installFolder}/../MacOS/, targetFile:eclipse, permissions:755);
+          <instruction key='unconfigure'>
+            setLauncherName()
           </instruction>
         </instructions>
       </touchpointData>
@@ -1282,40 +1425,40 @@
         %copyright
       </copyright>
     </unit>
-    <unit id='toolingorg.eclipse.osgi' version='1.0.5.201706212234' singleton='false'>
-      <hostRequirements size='2'>
-        <required namespace='osgi.bundle' name='org.eclipse.osgi' range='[3.11.3.v20170209-1843,3.11.3.v20170209-1843]' greedy='false'/>
-        <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
-      </hostRequirements>
-      <properties size='2'>
-        <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
-        <property name='org.eclipse.pde.build.default' value='true'/>
+    <unit id='com.example.p2.feature.feature.jar' version='1.0.0.201706220953'>
+      <properties size='4'>
+        <property name='org.eclipse.equinox.p2.name' value='Feature'/>
+        <property name='org.eclipse.equinox.p2.description' value='[Enter Feature Description here.]'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://www.example.com/description'/>
+        <property name='org.eclipse.equinox.p2.provider' value='EXAMPLE'/>
       </properties>
-      <provides size='2'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.osgi' version='1.0.5.201706212234'/>
-        <provided namespace='org.eclipse.equinox.p2.flavor' name='tooling' version='1.0.0'/>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='com.example.p2.feature.feature.jar' version='1.0.0.201706220953'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='com.example.p2.feature' version='1.0.0.201706220953'/>
       </provides>
-      <requires size='2'>
-        <required namespace='osgi.bundle' name='org.eclipse.osgi' range='[3.11.3.v20170209-1843,3.11.3.v20170209-1843]' greedy='false'/>
-        <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
-      </requires>
-      <touchpoint id='null' version='0.0.0'/>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='com.example.p2.feature' version='1.0.0.201706220953'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
-        <instructions size='4'>
-          <instruction key='uninstall'>
-            uninstallBundle(bundle:${artifact});
-          </instruction>
-          <instruction key='install'>
-            installBundle(bundle:${artifact});
-          </instruction>
-          <instruction key='configure'>
-            setStartLevel(startLevel:-1);markStarted(started:true);
-          </instruction>
-          <instruction key='unconfigure'>
-            setStartLevel(startLevel:-1);markStarted(started:false);
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
           </instruction>
         </instructions>
       </touchpointData>
+      <licenses size='1'>
+        <license uri='http://www.example.com/license' url='http://www.example.com/license'>
+          [Enter License Description here.]
+        </license>
+      </licenses>
+      <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
+        [Enter Copyright Description here.]
+      </copyright>
     </unit>
     <unit id='javax.xml' version='1.3.4.v201005080400' singleton='false'>
       <update id='javax.xml' range='[0.0.0,1.3.4.v201005080400)' severity='0'/>
@@ -1406,58 +1549,6 @@
         <instructions size='1'>
           <instruction key='manifest'>
             Bundle-SymbolicName: org.eclipse.ecf.identity;singleton:=true&#xA;Bundle-Version: 3.7.0.v20160823-2221
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
-    <unit id='org.eclipse.swt.cocoa.macosx.x86_64' version='3.105.3.v20170228-0512'>
-      <update id='org.eclipse.swt.cocoa.macosx.x86_64' range='[0.0.0,3.105.3.v20170228-0512)' severity='0'/>
-      <properties size='5'>
-        <property name='df_LT.fragmentName' value='Standard Widget Toolkit for Mac OS X (Cocoa)'/>
-        <property name='df_LT.providerName' value='Eclipse.org'/>
-        <property name='org.eclipse.equinox.p2.name' value='%fragmentName'/>
-        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
-        <property name='org.eclipse.equinox.p2.bundle.localization' value='fragment'/>
-      </properties>
-      <provides size='23'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.swt.cocoa.macosx.x86_64' version='3.105.3.v20170228-0512'/>
-        <provided namespace='osgi.bundle' name='org.eclipse.swt.cocoa.macosx.x86_64' version='3.105.3.v20170228-0512'/>
-        <provided namespace='java.package' name='org.eclipse.swt' version='0.0.0'/>
-        <provided namespace='java.package' name='org.eclipse.swt.accessibility' version='0.0.0'/>
-        <provided namespace='java.package' name='org.eclipse.swt.awt' version='0.0.0'/>
-        <provided namespace='java.package' name='org.eclipse.swt.browser' version='0.0.0'/>
-        <provided namespace='java.package' name='org.eclipse.swt.custom' version='0.0.0'/>
-        <provided namespace='java.package' name='org.eclipse.swt.dnd' version='0.0.0'/>
-        <provided namespace='java.package' name='org.eclipse.swt.events' version='0.0.0'/>
-        <provided namespace='java.package' name='org.eclipse.swt.graphics' version='0.0.0'/>
-        <provided namespace='java.package' name='org.eclipse.swt.layout' version='0.0.0'/>
-        <provided namespace='java.package' name='org.eclipse.swt.opengl' version='0.0.0'/>
-        <provided namespace='java.package' name='org.eclipse.swt.printing' version='0.0.0'/>
-        <provided namespace='java.package' name='org.eclipse.swt.program' version='0.0.0'/>
-        <provided namespace='java.package' name='org.eclipse.swt.widgets' version='0.0.0'/>
-        <provided namespace='java.package' name='org.eclipse.swt.internal' version='0.0.0'/>
-        <provided namespace='java.package' name='org.eclipse.swt.internal.image' version='0.0.0'/>
-        <provided namespace='java.package' name='org.eclipse.swt.internal.theme' version='0.0.0'/>
-        <provided namespace='java.package' name='org.eclipse.swt.internal.mozilla' version='0.0.0'/>
-        <provided namespace='java.package' name='org.eclipse.swt.internal.cocoa' version='0.0.0'/>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
-        <provided namespace='osgi.fragment' name='org.eclipse.swt' version='3.105.3.v20170228-0512'/>
-        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
-      </provides>
-      <requires size='1'>
-        <required namespace='osgi.bundle' name='org.eclipse.swt' range='[3.0.0,4.0.0)'/>
-      </requires>
-      <filter>
-        (&amp;(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))
-      </filter>
-      <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='org.eclipse.swt.cocoa.macosx.x86_64' version='3.105.3.v20170228-0512'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='manifest'>
-            Bundle-SymbolicName: org.eclipse.swt.cocoa.macosx.x86_64; singleton:=true&#xA;Bundle-Version: 3.105.3.v20170228-0512&#xA;Fragment-Host: org.eclipse.swt; bundle-version=&quot;[3.0.0,4.0.0)&quot;
           </instruction>
         </instructions>
       </touchpointData>
@@ -1554,46 +1645,6 @@
         <instructions size='1'>
           <instruction key='manifest'>
             Bundle-SymbolicName: org.eclipse.equinox.p2.metadata.repository;singleton:=true&#xA;Bundle-Version: 1.2.300.v20160419-0834
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
-    <unit id='org.eclipse.e4.ui.workbench.renderers.swt.cocoa' version='0.11.300.v20160330-1418'>
-      <update id='org.eclipse.e4.ui.workbench.renderers.swt.cocoa' range='[0.0.0,0.11.300.v20160330-1418)' severity='0'/>
-      <properties size='5'>
-        <property name='df_LT.fragmentName' value='Eclipse UI MacOS X Enhancements'/>
-        <property name='df_LT.providerName' value='Eclipse.org'/>
-        <property name='org.eclipse.equinox.p2.name' value='%fragmentName'/>
-        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
-        <property name='org.eclipse.equinox.p2.bundle.localization' value='fragment-cocoa'/>
-      </properties>
-      <provides size='6'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.e4.ui.workbench.renderers.swt.cocoa' version='0.11.300.v20160330-1418'/>
-        <provided namespace='osgi.bundle' name='org.eclipse.e4.ui.workbench.renderers.swt.cocoa' version='0.11.300.v20160330-1418'/>
-        <provided namespace='java.package' name='org.eclipse.e4.ui.workbench.renderers.swt.cocoa' version='0.0.0'/>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
-        <provided namespace='osgi.fragment' name='org.eclipse.e4.ui.workbench.renderers.swt' version='0.11.300.v20160330-1418'/>
-        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
-      </provides>
-      <requires size='2'>
-        <required namespace='osgi.bundle' name='org.eclipse.e4.ui.workbench.renderers.swt' range='[0.10.0,1.0.0)'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.swt.cocoa.macosx.x86_64' range='0.0.0'>
-          <filter>
-            (&amp;(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))
-          </filter>
-        </required>
-      </requires>
-      <filter>
-        (osgi.ws=cocoa)
-      </filter>
-      <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='org.eclipse.e4.ui.workbench.renderers.swt.cocoa' version='0.11.300.v20160330-1418'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='manifest'>
-            Bundle-SymbolicName: org.eclipse.e4.ui.workbench.renderers.swt.cocoa;singleton:=true&#xA;Bundle-Version: 0.11.300.v20160330-1418&#xA;Fragment-Host: org.eclipse.e4.ui.workbench.renderers.swt;bundle-version=&quot;[0.10.0,1.0.0)&quot;
           </instruction>
         </instructions>
       </touchpointData>
@@ -1735,24 +1786,6 @@
       <copyright uri='http://www.eclipse.org/legal/epl-v10.html' url='http://www.eclipse.org/legal/epl-v10.html'>
         Copyright (c) 2014 Dennis Huebner and others.&#xA;All rights reserved.   This program and the accompanying materials&#xA;are made available under the terms of the Eclipse Public License v1.0&#xA;which accompanies this distribution, and is available at&#xA;http://www.eclipse.org/legal/epl-v10.html
       </copyright>
-    </unit>
-    <unit id='toolingcom.example.p2.core.product.configuration' version='1.0.5.201706212234'>
-      <provides size='1'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='toolingcom.example.p2.core.product.configuration' version='1.0.5.201706212234'/>
-      </provides>
-      <requires size='2'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='toolingcom.example.p2.core.product.ini.cocoa.macosx.x86_64' range='[1.0.5.201706212234,1.0.5.201706212234]'>
-          <filter>
-            (&amp;(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))
-          </filter>
-        </required>
-        <required namespace='org.eclipse.equinox.p2.iu' name='toolingcom.example.p2.core.product.config.cocoa.macosx.x86_64' range='[1.0.5.201706212234,1.0.5.201706212234]'>
-          <filter>
-            (&amp;(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))
-          </filter>
-        </required>
-      </requires>
-      <touchpoint id='null' version='0.0.0'/>
     </unit>
     <unit id='org.eclipse.equinox.p2.garbagecollector' version='1.0.300.v20160504-1450'>
       <update id='org.eclipse.equinox.p2.garbagecollector' range='[0.0.0,1.0.300.v20160504-1450)' severity='0'/>
@@ -1988,44 +2021,6 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='toolingorg.eclipse.equinox.launcher.cocoa.macosx.x86_64' version='1.1.401.v20161122-1740' singleton='false'>
-      <hostRequirements size='2'>
-        <required namespace='osgi.bundle' name='org.eclipse.equinox.launcher.cocoa.macosx.x86_64' range='[1.1.401.v20161122-1740,1.1.401.v20161122-1740]' greedy='false'/>
-        <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
-      </hostRequirements>
-      <properties size='2'>
-        <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
-        <property name='org.eclipse.pde.build.default' value='true'/>
-      </properties>
-      <provides size='2'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.equinox.launcher.cocoa.macosx.x86_64' version='1.1.401.v20161122-1740'/>
-        <provided namespace='org.eclipse.equinox.p2.flavor' name='tooling' version='1.0.0'/>
-      </provides>
-      <requires size='2'>
-        <required namespace='osgi.bundle' name='org.eclipse.equinox.launcher.cocoa.macosx.x86_64' range='[1.1.401.v20161122-1740,1.1.401.v20161122-1740]' greedy='false'/>
-        <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
-      </requires>
-      <filter>
-        (&amp;(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))
-      </filter>
-      <touchpoint id='null' version='0.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='4'>
-          <instruction key='uninstall'>
-            uninstallBundle(bundle:${artifact});
-          </instruction>
-          <instruction key='install'>
-            installBundle(bundle:${artifact});
-          </instruction>
-          <instruction key='configure'>
-            addProgramArg(programArg:--launcher.library);addProgramArg(programArg:@artifact);
-          </instruction>
-          <instruction key='unconfigure'>
-            removeProgramArg(programArg:--launcher.library);removeProgramArg(programArg:@artifact);
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
     <unit id='org.eclipse.equinox.frameworkadmin.equinox' version='1.0.700.v20160102-2223'>
       <update id='org.eclipse.equinox.frameworkadmin.equinox' range='[0.0.0,1.0.700.v20160102-2223)' severity='0'/>
       <properties size='5'>
@@ -2070,40 +2065,45 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='toolingorg.eclipse.equinox.common' version='1.0.5.201706212234' singleton='false'>
-      <hostRequirements size='2'>
-        <required namespace='osgi.bundle' name='org.eclipse.equinox.common' range='[3.8.0.v20160509-1230,3.8.0.v20160509-1230]' greedy='false'/>
-        <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
-      </hostRequirements>
-      <properties size='2'>
-        <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
-        <property name='org.eclipse.pde.build.default' value='true'/>
-      </properties>
-      <provides size='2'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.equinox.common' version='1.0.5.201706212234'/>
-        <provided namespace='org.eclipse.equinox.p2.flavor' name='tooling' version='1.0.0'/>
+    <unit id='com.example.p2.core.product_root.win32.win32.x86_64' version='1.0.7.201706220953'>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='com.example.p2.core.product_root.win32.win32.x86_64' version='1.0.7.201706220953'/>
       </provides>
-      <requires size='2'>
-        <required namespace='osgi.bundle' name='org.eclipse.equinox.common' range='[3.8.0.v20160509-1230,3.8.0.v20160509-1230]' greedy='false'/>
-        <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
-      </requires>
-      <touchpoint id='null' version='0.0.0'/>
+      <filter>
+        (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='binary' id='com.example.p2.core.product_root.win32.win32.x86_64' version='1.0.7.201706220953'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.native' version='1.0.0'/>
       <touchpointData size='1'>
-        <instructions size='4'>
+        <instructions size='2'>
           <instruction key='uninstall'>
-            uninstallBundle(bundle:${artifact});
+            cleanupzip(source:@artifact, target:${installFolder});
           </instruction>
           <instruction key='install'>
-            installBundle(bundle:${artifact});
-          </instruction>
-          <instruction key='configure'>
-            setStartLevel(startLevel:2);markStarted(started:true);
-          </instruction>
-          <instruction key='unconfigure'>
-            setStartLevel(startLevel:-1);markStarted(started:false);
+            unzip(source:@artifact, target:${installFolder});
           </instruction>
         </instructions>
       </touchpointData>
+    </unit>
+    <unit id='org.eclipse.equinox.launcher.win32.win32.x86_64.translated_host_properties' version='1.1.401.v20161122-1740'>
+      <hostRequirements size='1'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.equinox.launcher' range='[1.0.0,1.4.0)' greedy='false'/>
+      </hostRequirements>
+      <properties size='3'>
+        <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
+        <property name='df_LT.pluginName' value='Equinox Launcher Win32 X86_64 Fragment'/>
+        <property name='df_LT.providerName' value='Eclipse.org - Equinox'/>
+      </properties>
+      <provides size='2'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.equinox.launcher.win32.win32.x86_64.translated_host_properties' version='1.1.401.v20161122-1740'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.equinox.launcher' range='[1.0.0,1.4.0)' greedy='false'/>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
     </unit>
     <unit id='org.eclipse.equinox.bidi' version='1.0.0.v20160307-1318'>
       <update id='org.eclipse.equinox.bidi' range='[0.0.0,1.0.0.v20160307-1318)' severity='0'/>
@@ -2348,6 +2348,43 @@
         </instructions>
       </touchpointData>
     </unit>
+    <unit id='org.eclipse.equinox.launcher.win32.win32.x86_64' version='1.1.401.v20161122-1740'>
+      <update id='org.eclipse.equinox.launcher.win32.win32.x86_64' range='[0.0.0,1.1.401.v20161122-1740)' severity='0'/>
+      <properties size='5'>
+        <property name='df_LT.pluginName' value='Equinox Launcher Win32 X86_64 Fragment'/>
+        <property name='df_LT.providerName' value='Eclipse.org - Equinox'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='launcher.win32.win32.x86_64'/>
+      </properties>
+      <provides size='5'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.equinox.launcher.win32.win32.x86_64' version='1.1.401.v20161122-1740'/>
+        <provided namespace='osgi.bundle' name='org.eclipse.equinox.launcher.win32.win32.x86_64' version='1.1.401.v20161122-1740'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='osgi.fragment' name='org.eclipse.equinox.launcher' version='1.1.401.v20161122-1740'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='osgi.bundle' name='org.eclipse.equinox.launcher' range='[1.0.0,1.4.0)'/>
+      </requires>
+      <filter>
+        (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.eclipse.equinox.launcher.win32.win32.x86_64' version='1.1.401.v20161122-1740'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: org.eclipse.equinox.launcher.win32.win32.x86_64;singleton:=true&#xA;Bundle-Version: 1.1.401.v20161122-1740&#xA;Fragment-Host: org.eclipse.equinox.launcher;bundle-version=&quot;[1.0.0,1.4.0)&quot;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
     <unit id='org.eclipse.equinox.p2.jarprocessor' version='1.0.500.v20160504-1450'>
       <update id='org.eclipse.equinox.p2.jarprocessor' range='[0.0.0,1.0.500.v20160504-1450)' severity='0'/>
       <properties size='5'>
@@ -2466,6 +2503,41 @@
         </instructions>
       </touchpointData>
     </unit>
+    <unit id='toolingorg.eclipse.equinox.simpleconfigurator' version='1.0.7.201706220953' singleton='false'>
+      <hostRequirements size='2'>
+        <required namespace='osgi.bundle' name='org.eclipse.equinox.simpleconfigurator' range='[1.1.200.v20160504-1450,1.1.200.v20160504-1450]' greedy='false'/>
+        <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
+      </hostRequirements>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
+        <property name='org.eclipse.pde.build.default' value='true'/>
+      </properties>
+      <provides size='2'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.equinox.simpleconfigurator' version='1.0.7.201706220953'/>
+        <provided namespace='org.eclipse.equinox.p2.flavor' name='tooling' version='1.0.0'/>
+      </provides>
+      <requires size='2'>
+        <required namespace='osgi.bundle' name='org.eclipse.equinox.simpleconfigurator' range='[1.1.200.v20160504-1450,1.1.200.v20160504-1450]' greedy='false'/>
+        <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='4'>
+          <instruction key='uninstall'>
+            uninstallBundle(bundle:${artifact});
+          </instruction>
+          <instruction key='install'>
+            installBundle(bundle:${artifact});
+          </instruction>
+          <instruction key='configure'>
+            setStartLevel(startLevel:1);markStarted(started:true);
+          </instruction>
+          <instruction key='unconfigure'>
+            setStartLevel(startLevel:-1);markStarted(started:false);
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
     <unit id='tooling.source.default' version='1.0.0' singleton='false'>
       <hostRequirements size='1'>
         <required namespace='org.eclipse.equinox.p2.eclipse.type' name='source' range='0.0.0' optional='true' multiple='true' greedy='false'/>
@@ -2574,6 +2646,41 @@
         </instructions>
       </touchpointData>
     </unit>
+    <unit id='toolingorg.eclipse.equinox.ds' version='1.0.7.201706220953' singleton='false'>
+      <hostRequirements size='2'>
+        <required namespace='osgi.bundle' name='org.eclipse.equinox.ds' range='[1.4.400.v20160226-2036,1.4.400.v20160226-2036]' greedy='false'/>
+        <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
+      </hostRequirements>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
+        <property name='org.eclipse.pde.build.default' value='true'/>
+      </properties>
+      <provides size='2'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.equinox.ds' version='1.0.7.201706220953'/>
+        <provided namespace='org.eclipse.equinox.p2.flavor' name='tooling' version='1.0.0'/>
+      </provides>
+      <requires size='2'>
+        <required namespace='osgi.bundle' name='org.eclipse.equinox.ds' range='[1.4.400.v20160226-2036,1.4.400.v20160226-2036]' greedy='false'/>
+        <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='4'>
+          <instruction key='uninstall'>
+            uninstallBundle(bundle:${artifact});
+          </instruction>
+          <instruction key='install'>
+            installBundle(bundle:${artifact});
+          </instruction>
+          <instruction key='configure'>
+            setStartLevel(startLevel:2);markStarted(started:true);
+          </instruction>
+          <instruction key='unconfigure'>
+            setStartLevel(startLevel:-1);markStarted(started:false);
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
     <unit id='org.eclipse.equinox.p2.repository' version='2.3.200.v20160421-0324'>
       <update id='org.eclipse.equinox.p2.repository' range='[0.0.0,2.3.200.v20160421-0324)' severity='0'/>
       <properties size='5'>
@@ -2669,24 +2776,6 @@
           </instruction>
         </instructions>
       </touchpointData>
-    </unit>
-    <unit id='org.eclipse.equinox.launcher.cocoa.macosx.x86_64.translated_host_properties' version='1.1.401.v20161122-1740'>
-      <hostRequirements size='1'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.equinox.launcher' range='[1.0.0,1.4.0)' greedy='false'/>
-      </hostRequirements>
-      <properties size='3'>
-        <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
-        <property name='df_LT.pluginName' value='Equinox Launcher MacOSX Cocoa Fragment'/>
-        <property name='df_LT.providerName' value='Eclipse.org - Equinox'/>
-      </properties>
-      <provides size='2'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.equinox.launcher.cocoa.macosx.x86_64.translated_host_properties' version='1.1.401.v20161122-1740'/>
-        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
-      </provides>
-      <requires size='1'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.equinox.launcher' range='[1.0.0,1.4.0)' greedy='false'/>
-      </requires>
-      <touchpoint id='null' version='0.0.0'/>
     </unit>
     <unit id='org.eclipse.equinox.p2.core' version='2.4.100.v20160419-0834'>
       <update id='org.eclipse.equinox.p2.core' range='[0.0.0,2.4.100.v20160419-0834)' severity='0'/>
@@ -3120,6 +3209,41 @@
         </instructions>
       </touchpointData>
     </unit>
+    <unit id='toolingorg.eclipse.equinox.common' version='1.0.7.201706220953' singleton='false'>
+      <hostRequirements size='2'>
+        <required namespace='osgi.bundle' name='org.eclipse.equinox.common' range='[3.8.0.v20160509-1230,3.8.0.v20160509-1230]' greedy='false'/>
+        <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
+      </hostRequirements>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
+        <property name='org.eclipse.pde.build.default' value='true'/>
+      </properties>
+      <provides size='2'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.equinox.common' version='1.0.7.201706220953'/>
+        <provided namespace='org.eclipse.equinox.p2.flavor' name='tooling' version='1.0.0'/>
+      </provides>
+      <requires size='2'>
+        <required namespace='osgi.bundle' name='org.eclipse.equinox.common' range='[3.8.0.v20160509-1230,3.8.0.v20160509-1230]' greedy='false'/>
+        <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='4'>
+          <instruction key='uninstall'>
+            uninstallBundle(bundle:${artifact});
+          </instruction>
+          <instruction key='install'>
+            installBundle(bundle:${artifact});
+          </instruction>
+          <instruction key='configure'>
+            setStartLevel(startLevel:2);markStarted(started:true);
+          </instruction>
+          <instruction key='unconfigure'>
+            setStartLevel(startLevel:-1);markStarted(started:false);
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
     <unit id='org.eclipse.osgi.compatibility.state' version='1.0.200.v20160504-1419' singleton='false'>
       <update id='org.eclipse.osgi.compatibility.state' range='[0.0.0,1.0.200.v20160504-1419)' severity='0'/>
       <properties size='4'>
@@ -3181,43 +3305,6 @@
           </instruction>
           <instruction key='unconfigure'>
             removeProgramArg(programArg:-startup);removeProgramArg(programArg:@artifact);
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
-    <unit id='org.eclipse.equinox.launcher.cocoa.macosx.x86_64' version='1.1.401.v20161122-1740'>
-      <update id='org.eclipse.equinox.launcher.cocoa.macosx.x86_64' range='[0.0.0,1.1.401.v20161122-1740)' severity='0'/>
-      <properties size='5'>
-        <property name='df_LT.pluginName' value='Equinox Launcher MacOSX Cocoa Fragment'/>
-        <property name='df_LT.providerName' value='Eclipse.org - Equinox'/>
-        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
-        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
-        <property name='org.eclipse.equinox.p2.bundle.localization' value='launcher.cocoa.macosx.x86_64'/>
-      </properties>
-      <provides size='5'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.equinox.launcher.cocoa.macosx.x86_64' version='1.1.401.v20161122-1740'/>
-        <provided namespace='osgi.bundle' name='org.eclipse.equinox.launcher.cocoa.macosx.x86_64' version='1.1.401.v20161122-1740'/>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
-        <provided namespace='osgi.fragment' name='org.eclipse.equinox.launcher' version='1.1.401.v20161122-1740'/>
-        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
-      </provides>
-      <requires size='1'>
-        <required namespace='osgi.bundle' name='org.eclipse.equinox.launcher' range='[1.0.0,1.4.0)'/>
-      </requires>
-      <filter>
-        (&amp;(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))
-      </filter>
-      <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='org.eclipse.equinox.launcher.cocoa.macosx.x86_64' version='1.1.401.v20161122-1740'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='2'>
-          <instruction key='zipped'>
-            true
-          </instruction>
-          <instruction key='manifest'>
-            Bundle-SymbolicName: org.eclipse.equinox.launcher.cocoa.macosx.x86_64;singleton:=true&#xA;Bundle-Version: 1.1.401.v20161122-1740&#xA;Fragment-Host: org.eclipse.equinox.launcher;bundle-version=&quot;[1.0.0,1.4.0)&quot;
           </instruction>
         </instructions>
       </touchpointData>
@@ -3309,41 +3396,6 @@
           </instruction>
         </instructions>
       </touchpointData>
-    </unit>
-    <unit id='com.example.p2.feature.feature.jar' version='1.0.0.201706212234'>
-      <properties size='4'>
-        <property name='org.eclipse.equinox.p2.name' value='Feature'/>
-        <property name='org.eclipse.equinox.p2.description' value='[Enter Feature Description here.]'/>
-        <property name='org.eclipse.equinox.p2.description.url' value='http://www.example.com/description'/>
-        <property name='org.eclipse.equinox.p2.provider' value='EXAMPLE'/>
-      </properties>
-      <provides size='3'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='com.example.p2.feature.feature.jar' version='1.0.0.201706212234'/>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
-        <provided namespace='org.eclipse.update.feature' name='com.example.p2.feature' version='1.0.0.201706212234'/>
-      </provides>
-      <filter>
-        (org.eclipse.update.install.features=true)
-      </filter>
-      <artifacts size='1'>
-        <artifact classifier='org.eclipse.update.feature' id='com.example.p2.feature' version='1.0.0.201706212234'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='zipped'>
-            true
-          </instruction>
-        </instructions>
-      </touchpointData>
-      <licenses size='1'>
-        <license uri='http://www.example.com/license' url='http://www.example.com/license'>
-          [Enter License Description here.]
-        </license>
-      </licenses>
-      <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
-        [Enter Copyright Description here.]
-      </copyright>
     </unit>
     <unit id='org.eclipse.core.databinding' version='1.6.0.v20160412-0910' singleton='false'>
       <update id='org.eclipse.core.databinding' range='[0.0.0,1.6.0.v20160412-0910)' severity='0'/>
@@ -3625,41 +3677,6 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='toolingorg.eclipse.equinox.ds' version='1.0.5.201706212234' singleton='false'>
-      <hostRequirements size='2'>
-        <required namespace='osgi.bundle' name='org.eclipse.equinox.ds' range='[1.4.400.v20160226-2036,1.4.400.v20160226-2036]' greedy='false'/>
-        <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
-      </hostRequirements>
-      <properties size='2'>
-        <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
-        <property name='org.eclipse.pde.build.default' value='true'/>
-      </properties>
-      <provides size='2'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.equinox.ds' version='1.0.5.201706212234'/>
-        <provided namespace='org.eclipse.equinox.p2.flavor' name='tooling' version='1.0.0'/>
-      </provides>
-      <requires size='2'>
-        <required namespace='osgi.bundle' name='org.eclipse.equinox.ds' range='[1.4.400.v20160226-2036,1.4.400.v20160226-2036]' greedy='false'/>
-        <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
-      </requires>
-      <touchpoint id='null' version='0.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='4'>
-          <instruction key='uninstall'>
-            uninstallBundle(bundle:${artifact});
-          </instruction>
-          <instruction key='install'>
-            installBundle(bundle:${artifact});
-          </instruction>
-          <instruction key='configure'>
-            setStartLevel(startLevel:2);markStarted(started:true);
-          </instruction>
-          <instruction key='unconfigure'>
-            setStartLevel(startLevel:-1);markStarted(started:false);
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
     <unit id='org.eclipse.e4.ui.workbench.addons.swt' version='1.2.101.v20170206-1129'>
       <update id='org.eclipse.e4.ui.workbench.addons.swt' range='[0.0.0,1.2.101.v20170206-1129)' severity='0'/>
       <properties size='5'>
@@ -3710,41 +3727,6 @@
         <instructions size='1'>
           <instruction key='manifest'>
             Bundle-SymbolicName: org.eclipse.e4.ui.workbench.addons.swt;singleton:=true&#xA;Bundle-Version: 1.2.101.v20170206-1129
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
-    <unit id='toolingorg.eclipse.core.runtime' version='1.0.5.201706212234' singleton='false'>
-      <hostRequirements size='2'>
-        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='[3.12.0.v20160606-1342,3.12.0.v20160606-1342]' greedy='false'/>
-        <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
-      </hostRequirements>
-      <properties size='2'>
-        <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
-        <property name='org.eclipse.pde.build.default' value='true'/>
-      </properties>
-      <provides size='2'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.core.runtime' version='1.0.5.201706212234'/>
-        <provided namespace='org.eclipse.equinox.p2.flavor' name='tooling' version='1.0.0'/>
-      </provides>
-      <requires size='2'>
-        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='[3.12.0.v20160606-1342,3.12.0.v20160606-1342]' greedy='false'/>
-        <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
-      </requires>
-      <touchpoint id='null' version='0.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='4'>
-          <instruction key='uninstall'>
-            uninstallBundle(bundle:${artifact});
-          </instruction>
-          <instruction key='install'>
-            installBundle(bundle:${artifact});
-          </instruction>
-          <instruction key='configure'>
-            setStartLevel(startLevel:4);markStarted(started:true);
-          </instruction>
-          <instruction key='unconfigure'>
-            setStartLevel(startLevel:-1);markStarted(started:false);
           </instruction>
         </instructions>
       </touchpointData>
@@ -3873,6 +3855,57 @@
         </instructions>
       </touchpointData>
     </unit>
+    <unit id='com.example.p2.feature.feature.group' version='1.0.0.201706220953' singleton='false'>
+      <update id='com.example.p2.feature.feature.group' range='[0.0.0,1.0.0.201706220953)' severity='0'/>
+      <properties size='5'>
+        <property name='org.eclipse.equinox.p2.name' value='Feature'/>
+        <property name='org.eclipse.equinox.p2.description' value='[Enter Feature Description here.]'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://www.example.com/description'/>
+        <property name='org.eclipse.equinox.p2.provider' value='EXAMPLE'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='com.example.p2.feature.feature.group' version='1.0.0.201706220953'/>
+      </provides>
+      <requires size='3'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.example.p2.core' range='[1.0.0.201706220953,1.0.0.201706220953]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.equinox.concurrent' range='[1.1.0.v20130327-1442,1.1.0.v20130327-1442]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.example.p2.feature.feature.jar' range='[1.0.0.201706220953,1.0.0.201706220953]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license uri='http://www.example.com/license' url='http://www.example.com/license'>
+          [Enter License Description here.]
+        </license>
+      </licenses>
+      <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
+        [Enter Copyright Description here.]
+      </copyright>
+    </unit>
+    <unit id='toolingcom.example.p2.core.product.ini.win32.win32.x86_64' version='1.0.7.201706220953' singleton='false'>
+      <provides size='2'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='toolingcom.example.p2.core.product.ini.win32.win32.x86_64' version='1.0.7.201706220953'/>
+        <provided namespace='toolingcom.example.p2.core.product' name='com.example.p2.core.product.ini' version='1.0.7.201706220953'/>
+      </provides>
+      <filter>
+        (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
+      </filter>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='configure'>
+            addProgramArg(programArg:-clearPersistedState);
+          </instruction>
+          <instruction key='unconfigure'>
+            removeProgramArg(programArg:-clearPersistedState);
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
     <unit id='org.eclipse.equinox.registry' version='3.6.100.v20160223-2218'>
       <update id='org.eclipse.equinox.registry' range='[0.0.0,3.6.100.v20160223-2218)' severity='0'/>
       <properties size='5'>
@@ -3924,37 +3957,6 @@
           </instruction>
         </instructions>
       </touchpointData>
-    </unit>
-    <unit id='com.example.p2.feature.feature.group' version='1.0.0.201706212234' singleton='false'>
-      <update id='com.example.p2.feature.feature.group' range='[0.0.0,1.0.0.201706212234)' severity='0'/>
-      <properties size='5'>
-        <property name='org.eclipse.equinox.p2.name' value='Feature'/>
-        <property name='org.eclipse.equinox.p2.description' value='[Enter Feature Description here.]'/>
-        <property name='org.eclipse.equinox.p2.description.url' value='http://www.example.com/description'/>
-        <property name='org.eclipse.equinox.p2.provider' value='EXAMPLE'/>
-        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
-      </properties>
-      <provides size='1'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='com.example.p2.feature.feature.group' version='1.0.0.201706212234'/>
-      </provides>
-      <requires size='3'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='com.example.p2.core' range='[1.0.0.201706212234,1.0.0.201706212234]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.equinox.concurrent' range='[1.1.0.v20130327-1442,1.1.0.v20130327-1442]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='com.example.p2.feature.feature.jar' range='[1.0.0.201706212234,1.0.0.201706212234]'>
-          <filter>
-            (org.eclipse.update.install.features=true)
-          </filter>
-        </required>
-      </requires>
-      <touchpoint id='null' version='0.0.0'/>
-      <licenses size='1'>
-        <license uri='http://www.example.com/license' url='http://www.example.com/license'>
-          [Enter License Description here.]
-        </license>
-      </licenses>
-      <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
-        [Enter Copyright Description here.]
-      </copyright>
     </unit>
     <unit id='org.eclipse.swt' version='3.105.3.v20170228-0512'>
       <update id='org.eclipse.swt' range='[0.0.0,3.105.3.v20170228-0512)' severity='0'/>
@@ -4170,6 +4172,41 @@
         <instructions size='1'>
           <instruction key='manifest'>
             Bundle-SymbolicName: org.eclipse.e4.core.di.extensions;singleton:=true&#xA;Bundle-Version: 0.14.0.v20160211-1614
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='toolingorg.eclipse.core.runtime' version='1.0.7.201706220953' singleton='false'>
+      <hostRequirements size='2'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='[3.12.0.v20160606-1342,3.12.0.v20160606-1342]' greedy='false'/>
+        <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
+      </hostRequirements>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
+        <property name='org.eclipse.pde.build.default' value='true'/>
+      </properties>
+      <provides size='2'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.core.runtime' version='1.0.7.201706220953'/>
+        <provided namespace='org.eclipse.equinox.p2.flavor' name='tooling' version='1.0.0'/>
+      </provides>
+      <requires size='2'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='[3.12.0.v20160606-1342,3.12.0.v20160606-1342]' greedy='false'/>
+        <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='4'>
+          <instruction key='uninstall'>
+            uninstallBundle(bundle:${artifact});
+          </instruction>
+          <instruction key='install'>
+            installBundle(bundle:${artifact});
+          </instruction>
+          <instruction key='configure'>
+            setStartLevel(startLevel:4);markStarted(started:true);
+          </instruction>
+          <instruction key='unconfigure'>
+            setStartLevel(startLevel:-1);markStarted(started:false);
           </instruction>
         </instructions>
       </touchpointData>
@@ -4473,41 +4510,6 @@
         Copyright (c) 2014 Composent, Inc. and others. All rights&#xA;reserved.&#xA;This program and the accompanying materials are made available&#xA;under the terms of the Eclipse Public License v1.0 which accompanies&#xA;this distribution, and is available at &#xA;http://www.eclipse.org/legal/epl-v10.html&#xA; &#xA;Contributors: Composent, Inc. - initial API and implementation
       </copyright>
     </unit>
-    <unit id='toolingorg.eclipse.equinox.simpleconfigurator' version='1.0.5.201706212234' singleton='false'>
-      <hostRequirements size='2'>
-        <required namespace='osgi.bundle' name='org.eclipse.equinox.simpleconfigurator' range='[1.1.200.v20160504-1450,1.1.200.v20160504-1450]' greedy='false'/>
-        <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
-      </hostRequirements>
-      <properties size='2'>
-        <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
-        <property name='org.eclipse.pde.build.default' value='true'/>
-      </properties>
-      <provides size='2'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.equinox.simpleconfigurator' version='1.0.5.201706212234'/>
-        <provided namespace='org.eclipse.equinox.p2.flavor' name='tooling' version='1.0.0'/>
-      </provides>
-      <requires size='2'>
-        <required namespace='osgi.bundle' name='org.eclipse.equinox.simpleconfigurator' range='[1.1.200.v20160504-1450,1.1.200.v20160504-1450]' greedy='false'/>
-        <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
-      </requires>
-      <touchpoint id='null' version='0.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='4'>
-          <instruction key='uninstall'>
-            uninstallBundle(bundle:${artifact});
-          </instruction>
-          <instruction key='install'>
-            installBundle(bundle:${artifact});
-          </instruction>
-          <instruction key='configure'>
-            setStartLevel(startLevel:1);markStarted(started:true);
-          </instruction>
-          <instruction key='unconfigure'>
-            setStartLevel(startLevel:-1);markStarted(started:false);
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
     <unit id='org.w3c.dom.smil' version='1.0.1.v200903091627' singleton='false'>
       <update id='org.w3c.dom.smil' range='[0.0.0,1.0.1.v200903091627)' severity='0'/>
       <properties size='5'>
@@ -4716,6 +4718,68 @@
           </instruction>
         </instructions>
       </touchpointData>
+    </unit>
+    <unit id='com.example.p2.core.product' version='1.0.7.201706220953'>
+      <update id='com.example.p2.core.product' range='0.0.0' severity='0'/>
+      <properties size='3'>
+        <property name='org.eclipse.equinox.p2.name' value='com.example.p2.core'/>
+        <property name='org.eclipse.equinox.p2.type.product' value='true'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='com.example.p2.core.product' version='1.0.7.201706220953'/>
+      </provides>
+      <requires size='28'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.e4.rcp.feature.group' range='[1.5.3.v20170228-0512,1.5.3.v20170228-0512]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='a.jre.javase' range='[1.6.0,1.6.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.equinox.common' range='[1.0.7.201706220953,1.0.7.201706220953]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ecf.filetransfer.httpclient4.feature.feature.group' range='[3.13.2.v20160823-2221,3.13.2.v20160823-2221]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ecf.filetransfer.httpclient4.ssl.feature.feature.group' range='[1.1.0.v20160823-2221,1.1.0.v20160823-2221]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.equinox.simpleconfigurator' range='[1.0.7.201706220953,1.0.7.201706220953]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.equinox.launcher.win32.win32.x86_64' range='[1.1.401.v20161122-1740,1.1.401.v20161122-1740]'>
+          <filter>
+            (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
+          </filter>
+        </required>
+        <required namespace='org.eclipse.equinox.p2.iu' name='tooling.osgi.bundle.default' range='[1.0.0,1.0.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.equinox.launcher' range='[1.3.201.v20161025-1711,1.3.201.v20161025-1711]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.osgi' range='[1.0.7.201706220953,1.0.7.201706220953]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='toolingcom.example.p2.core.product_root.win32.win32.x86_64' range='[1.0.7.201706220953,1.0.7.201706220953]'>
+          <filter>
+            (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
+          </filter>
+        </required>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ecf.filetransfer.feature.feature.group' range='[3.13.2.v20160823-2221,3.13.2.v20160823-2221]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ecf.filetransfer.ssl.feature.feature.group' range='[1.1.0.v20160823-2221,1.1.0.v20160823-2221]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.emf.common.feature.group' range='[2.12.0.v20160420-0247,2.12.0.v20160420-0247]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.equinox.ds' range='[1.0.7.201706220953,1.0.7.201706220953]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.emf.ecore.feature.group' range='[2.12.0.v20160420-0247,2.12.0.v20160420-0247]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='tooling.source.default' range='[1.0.0,1.0.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='config.a.jre.javase' range='[1.6.0,1.6.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.core.runtime' range='[1.0.7.201706220953,1.0.7.201706220953]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.example.p2.feature.feature.group' range='[1.0.0.201706220953,1.0.0.201706220953]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ecf.core.ssl.feature.feature.group' range='[1.1.0.v20160823-2221,1.1.0.v20160823-2221]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='toolingcom.example.p2.core.product.configuration' range='[1.0.7.201706220953,1.0.7.201706220953]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='tooling.org.eclipse.update.feature.default' range='[1.0.0,1.0.0]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.equinox.launcher' range='[1.3.201.v20161025-1711,1.3.201.v20161025-1711]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.example.p2.core.product_root.win32.win32.x86_64' range='[1.0.7.201706220953,1.0.7.201706220953]'>
+          <filter>
+            (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
+          </filter>
+        </required>
+        <required namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.equinox.launcher.win32.win32.x86_64' range='[1.1.401.v20161122-1740,1.1.401.v20161122-1740]'>
+          <filter>
+            (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
+          </filter>
+        </required>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ecf.core.feature.feature.group' range='[1.3.0.v20160823-2221,1.3.0.v20160823-2221]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.equinox.p2.core.feature.feature.group' range='[1.3.203.v20170131-1444,1.3.203.v20170131-1444]'/>
+      </requires>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
     </unit>
     <unit id='org.apache.httpcomponents.httpcore' version='4.3.3.v201411290715' singleton='false'>
       <update id='org.apache.httpcomponents.httpcore' range='[0.0.0,4.3.3.v201411290715)' severity='0'/>
@@ -5058,68 +5122,6 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='com.example.p2.core.product' version='1.0.5.201706212234'>
-      <update id='com.example.p2.core.product' range='0.0.0' severity='0'/>
-      <properties size='3'>
-        <property name='org.eclipse.equinox.p2.name' value='com.example.p2.core'/>
-        <property name='org.eclipse.equinox.p2.type.product' value='true'/>
-        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
-      </properties>
-      <provides size='1'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='com.example.p2.core.product' version='1.0.5.201706212234'/>
-      </provides>
-      <requires size='28'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.equinox.ds' range='[1.0.5.201706212234,1.0.5.201706212234]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.e4.rcp.feature.group' range='[1.5.3.v20170228-0512,1.5.3.v20170228-0512]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='a.jre.javase' range='[1.6.0,1.6.0]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ecf.filetransfer.httpclient4.feature.feature.group' range='[3.13.2.v20160823-2221,3.13.2.v20160823-2221]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ecf.filetransfer.httpclient4.ssl.feature.feature.group' range='[1.1.0.v20160823-2221,1.1.0.v20160823-2221]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='tooling.osgi.bundle.default' range='[1.0.0,1.0.0]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.equinox.launcher.cocoa.macosx.x86_64' range='[1.1.401.v20161122-1740,1.1.401.v20161122-1740]'>
-          <filter>
-            (&amp;(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))
-          </filter>
-        </required>
-        <required namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.equinox.launcher' range='[1.3.201.v20161025-1711,1.3.201.v20161025-1711]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.osgi' range='[1.0.5.201706212234,1.0.5.201706212234]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.equinox.launcher.cocoa.macosx.x86_64' range='[1.1.401.v20161122-1740,1.1.401.v20161122-1740]'>
-          <filter>
-            (&amp;(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))
-          </filter>
-        </required>
-        <required namespace='org.eclipse.equinox.p2.iu' name='com.example.p2.feature.feature.group' range='[1.0.0.201706212234,1.0.0.201706212234]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ecf.filetransfer.feature.feature.group' range='[3.13.2.v20160823-2221,3.13.2.v20160823-2221]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ecf.filetransfer.ssl.feature.feature.group' range='[1.1.0.v20160823-2221,1.1.0.v20160823-2221]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.emf.common.feature.group' range='[2.12.0.v20160420-0247,2.12.0.v20160420-0247]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='toolingcom.example.p2.core.product.configuration' range='[1.0.5.201706212234,1.0.5.201706212234]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.emf.ecore.feature.group' range='[2.12.0.v20160420-0247,2.12.0.v20160420-0247]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='tooling.source.default' range='[1.0.0,1.0.0]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.equinox.common' range='[1.0.5.201706212234,1.0.5.201706212234]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='config.a.jre.javase' range='[1.6.0,1.6.0]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='com.example.p2.core.product_root.cocoa.macosx.x86_64' range='[1.0.5.201706212234,1.0.5.201706212234]'>
-          <filter>
-            (&amp;(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))
-          </filter>
-        </required>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ecf.core.ssl.feature.feature.group' range='[1.1.0.v20160823-2221,1.1.0.v20160823-2221]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='toolingcom.example.p2.core.product_root.cocoa.macosx.x86_64' range='[1.0.5.201706212234,1.0.5.201706212234]'>
-          <filter>
-            (&amp;(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))
-          </filter>
-        </required>
-        <required namespace='org.eclipse.equinox.p2.iu' name='tooling.org.eclipse.update.feature.default' range='[1.0.0,1.0.0]'>
-          <filter>
-            (org.eclipse.update.install.features=true)
-          </filter>
-        </required>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.equinox.launcher' range='[1.3.201.v20161025-1711,1.3.201.v20161025-1711]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.core.runtime' range='[1.0.5.201706212234,1.0.5.201706212234]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.equinox.simpleconfigurator' range='[1.0.5.201706212234,1.0.5.201706212234]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ecf.core.feature.feature.group' range='[1.3.0.v20160823-2221,1.3.0.v20160823-2221]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.equinox.p2.core.feature.feature.group' range='[1.3.203.v20170131-1444,1.3.203.v20170131-1444]'/>
-      </requires>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-    </unit>
     <unit id='org.eclipse.equinox.p2.operations' version='2.4.200.v20160504-1450'>
       <update id='org.eclipse.equinox.p2.operations' range='[0.0.0,2.4.200.v20160504-1450)' severity='0'/>
       <properties size='5'>
@@ -5205,6 +5207,26 @@
         </instructions>
       </touchpointData>
     </unit>
+    <unit id='toolingcom.example.p2.core.product.config.win32.win32.x86_64' version='1.0.7.201706220953' singleton='false'>
+      <provides size='2'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='toolingcom.example.p2.core.product.config.win32.win32.x86_64' version='1.0.7.201706220953'/>
+        <provided namespace='toolingcom.example.p2.core.product' name='com.example.p2.core.product.config' version='1.0.7.201706220953'/>
+      </provides>
+      <filter>
+        (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
+      </filter>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='configure'>
+            setProgramProperty(propName:eclipse.product,propValue:com.example.p2.core.product);setProgramProperty(propName:eclipse.application,propValue:org.eclipse.e4.ui.workbench.swt.E4Application);addRepository(type:0,location:file${#58}////Users/jpark/workspace,enabled:true);addRepository(type:1,location:file${#58}////Users/jpark/workspace,enabled:true);
+          </instruction>
+          <instruction key='unconfigure'>
+            setProgramProperty(propName:eclipse.product,propValue:);setProgramProperty(propName:eclipse.application,propValue:);removeRepository(type:0,location:file${#58}////Users/jpark/workspace);removeRepository(type:1,location:file${#58}////Users/jpark/workspace);
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
     <unit id='org.eclipse.ecf.provider.filetransfer.httpclient4' version='1.1.100.v20160823-2221'>
       <update id='org.eclipse.ecf.provider.filetransfer.httpclient4' range='[0.0.0,1.1.100.v20160823-2221)' severity='0'/>
       <properties size='5'>
@@ -5268,42 +5290,6 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='org.eclipse.equinox.security.macosx' version='1.100.200.v20130327-1442'>
-      <update id='org.eclipse.equinox.security.macosx' range='[0.0.0,1.100.200.v20130327-1442)' severity='0'/>
-      <properties size='5'>
-        <property name='df_LT.fragmentName' value='OS X Keystore service integration'/>
-        <property name='df_LT.providerName' value='Eclipse.org - Equinox'/>
-        <property name='org.eclipse.equinox.p2.name' value='%fragmentName'/>
-        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
-        <property name='org.eclipse.equinox.p2.bundle.localization' value='fragment'/>
-      </properties>
-      <provides size='7'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.equinox.security.macosx' version='1.100.200.v20130327-1442'/>
-        <provided namespace='osgi.bundle' name='org.eclipse.equinox.security.macosx' version='1.100.200.v20130327-1442'/>
-        <provided namespace='java.package' name='org.eclipse.equinox.internal.security.osx' version='0.0.0'/>
-        <provided namespace='java.package' name='org.eclipse.equinox.internal.security.osx.nls' version='0.0.0'/>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
-        <provided namespace='osgi.fragment' name='org.eclipse.equinox.security' version='1.100.200.v20130327-1442'/>
-        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
-      </provides>
-      <requires size='1'>
-        <required namespace='osgi.bundle' name='org.eclipse.equinox.security' range='[1.0.0,2.0.0)'/>
-      </requires>
-      <filter>
-        (&amp;(osgi.os=macosx)(|(osgi.arch=ppc)(osgi.arch=x86)(osgi.arch=x86_64)))
-      </filter>
-      <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='org.eclipse.equinox.security.macosx' version='1.100.200.v20130327-1442'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='manifest'>
-            Bundle-SymbolicName: org.eclipse.equinox.security.macosx;singleton:=true&#xA;Bundle-Version: 1.100.200.v20130327-1442&#xA;Fragment-Host: org.eclipse.equinox.security;bundle-version=&quot;[1.0.0,2.0.0)&quot;
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
     <unit id='org.eclipse.equinox.event' version='1.3.200.v20160324-1850' singleton='false'>
       <update id='org.eclipse.equinox.event' range='[0.0.0,1.3.200.v20160324-1850)' severity='0'/>
       <properties size='5'>
@@ -5337,45 +5323,6 @@
         <instructions size='1'>
           <instruction key='manifest'>
             Bundle-SymbolicName: org.eclipse.equinox.event&#xA;Bundle-Version: 1.3.200.v20160324-1850
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
-    <unit id='com.example.p2.core' version='1.0.0.201706212234'>
-      <update id='com.example.p2.core' range='[0.0.0,1.0.0.201706212234)' severity='0'/>
-      <properties size='2'>
-        <property name='org.eclipse.equinox.p2.name' value='Core'/>
-        <property name='org.eclipse.equinox.p2.provider' value='EXAMPLE'/>
-      </properties>
-      <provides size='3'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='com.example.p2.core' version='1.0.0.201706212234'/>
-        <provided namespace='osgi.bundle' name='com.example.p2.core' version='1.0.0.201706212234'/>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
-      </provides>
-      <requires size='14'>
-        <required namespace='osgi.bundle' name='javax.inject' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.swt' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.e4.ui.model.workbench' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.jface' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.e4.ui.services' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.e4.ui.workbench' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.e4.core.di' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.e4.ui.di' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.e4.core.contexts' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.equinox.p2.core' range='2.4.100'/>
-        <required namespace='osgi.bundle' name='org.eclipse.equinox.p2.engine' range='2.4.100'/>
-        <required namespace='osgi.bundle' name='org.eclipse.equinox.p2.operations' range='2.4.200'/>
-        <required namespace='osgi.bundle' name='org.eclipse.equinox.p2.metadata.repository' range='1.2.300'/>
-      </requires>
-      <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='com.example.p2.core' version='1.0.0.201706212234'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='manifest'>
-            Bundle-SymbolicName: com.example.p2.core;singleton:=true&#xA;Bundle-Version: 1.0.0.201706212234
           </instruction>
         </instructions>
       </touchpointData>
@@ -5624,29 +5571,6 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='toolingcom.example.p2.core.product_root.cocoa.macosx.x86_64' version='1.0.5.201706212234' singleton='false'>
-      <properties size='1'>
-        <property name='org.eclipse.pde.build.default' value='true'/>
-      </properties>
-      <provides size='2'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='toolingcom.example.p2.core.product_root.cocoa.macosx.x86_64' version='1.0.5.201706212234'/>
-        <provided namespace='org.eclipse.equinox.p2.flavor' name='tooling' version='1.0.0'/>
-      </provides>
-      <filter>
-        (&amp;(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))
-      </filter>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='2'>
-          <instruction key='configure'>
-            setLauncherName(name:eclipse)
-          </instruction>
-          <instruction key='unconfigure'>
-            setLauncherName()
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
     <unit id='org.eclipse.emf.ecore' version='2.12.0.v20160420-0247'>
       <update id='org.eclipse.emf.ecore' range='[0.0.0,2.12.0.v20160420-0247)' severity='0'/>
       <properties size='5'>
@@ -5728,6 +5652,44 @@
         <instructions size='1'>
           <instruction key='manifest'>
             Bundle-SymbolicName: org.apache.batik.util.gui&#xA;Bundle-Version: 1.7.0.v200903091627
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='toolingorg.eclipse.equinox.launcher.win32.win32.x86_64' version='1.1.401.v20161122-1740' singleton='false'>
+      <hostRequirements size='2'>
+        <required namespace='osgi.bundle' name='org.eclipse.equinox.launcher.win32.win32.x86_64' range='[1.1.401.v20161122-1740,1.1.401.v20161122-1740]' greedy='false'/>
+        <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
+      </hostRequirements>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
+        <property name='org.eclipse.pde.build.default' value='true'/>
+      </properties>
+      <provides size='2'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='toolingorg.eclipse.equinox.launcher.win32.win32.x86_64' version='1.1.401.v20161122-1740'/>
+        <provided namespace='org.eclipse.equinox.p2.flavor' name='tooling' version='1.0.0'/>
+      </provides>
+      <requires size='2'>
+        <required namespace='osgi.bundle' name='org.eclipse.equinox.launcher.win32.win32.x86_64' range='[1.1.401.v20161122-1740,1.1.401.v20161122-1740]' greedy='false'/>
+        <required namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' range='[1.0.0,2.0.0)' greedy='false'/>
+      </requires>
+      <filter>
+        (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
+      </filter>
+      <touchpoint id='null' version='0.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='4'>
+          <instruction key='uninstall'>
+            uninstallBundle(bundle:${artifact});
+          </instruction>
+          <instruction key='install'>
+            installBundle(bundle:${artifact});
+          </instruction>
+          <instruction key='configure'>
+            addProgramArg(programArg:--launcher.library);addProgramArg(programArg:@artifact);
+          </instruction>
+          <instruction key='unconfigure'>
+            removeProgramArg(programArg:--launcher.library);removeProgramArg(programArg:@artifact);
           </instruction>
         </instructions>
       </touchpointData>
@@ -6086,28 +6048,6 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='org.eclipse.pde.container.feature_root.cocoa.macosx.x86_64' version='1.0.0'>
-      <provides size='1'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.pde.container.feature_root.cocoa.macosx.x86_64' version='1.0.0'/>
-      </provides>
-      <filter>
-        (&amp;(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))
-      </filter>
-      <artifacts size='1'>
-        <artifact classifier='binary' id='org.eclipse.pde.container.feature_root.cocoa.macosx.x86_64' version='1.0.0'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.native' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='2'>
-          <instruction key='uninstall'>
-            cleanupzip(source:@artifact, target:${installFolder});
-          </instruction>
-          <instruction key='install'>
-            unzip(source:@artifact, target:${installFolder});
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
     <unit id='org.eclipse.ecf' version='3.8.0.v20160823-2221'>
       <update id='org.eclipse.ecf' range='[0.0.0,3.8.0.v20160823-2221)' severity='0'/>
       <properties size='5'>
@@ -6152,6 +6092,28 @@
         <instructions size='1'>
           <instruction key='manifest'>
             Bundle-SymbolicName: org.eclipse.ecf;singleton:=true&#xA;Bundle-Version: 3.8.0.v20160823-2221
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.eclipse.pde.container.feature_root.win32.win32.x86_64' version='1.0.0'>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.pde.container.feature_root.win32.win32.x86_64' version='1.0.0'/>
+      </provides>
+      <filter>
+        (&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='binary' id='org.eclipse.pde.container.feature_root.win32.win32.x86_64' version='1.0.0'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.native' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='uninstall'>
+            cleanupzip(source:@artifact, target:${installFolder});
+          </instruction>
+          <instruction key='install'>
+            unzip(source:@artifact, target:${installFolder});
           </instruction>
         </instructions>
       </touchpointData>

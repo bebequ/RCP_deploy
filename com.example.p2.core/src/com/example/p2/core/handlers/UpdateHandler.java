@@ -21,7 +21,8 @@ import org.eclipse.swt.widgets.Shell;
 
 public class UpdateHandler {
     private static final String REPOSITORY_LOC = System.getProperty("UpdateHandler.Repo",
-            "file:////Users/jpark/workspace/repository");
+    		"file:////C:/Users/jpark.RAON-TECH/workspace/repository");
+    		//"file:////Users/jpark/workspace/repository");
 
     @Execute
     public void execute(final IProvisioningAgent agent, final Shell shell, final UISynchronize sync,

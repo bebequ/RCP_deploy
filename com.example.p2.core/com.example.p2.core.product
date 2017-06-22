@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="com.example.p2.core" id="com.example.p2.core.product" application="org.eclipse.e4.ui.workbench.swt.E4Application" version="1.0.5.qualifier" useFeatures="true" includeLaunchers="true">
+<product name="com.example.p2.core" id="com.example.p2.core.product" application="org.eclipse.e4.ui.workbench.swt.E4Application" version="1.0.7.qualifier" useFeatures="true" includeLaunchers="true">
 
    <configIni use="default">
    </configIni>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_c3AF0MjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.application" bindingContexts="_c3AF2cjYEeSyMNYR5xypkQ">
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_c3AF0cjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.window.main" label="Empty E4 Application" width="500" height="400">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_c3AF0cjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.window.main" label="Empty E4 Application" width="800" height="500">
     <children xsi:type="advanced:PerspectiveStack" xmi:id="_wmAwgFZHEeeghaVRUBwAVA" elementId="com.example.p2.core.perspectivestack.0">
       <children xsi:type="advanced:Perspective" xmi:id="_w5wL4FZHEeeghaVRUBwAVA" elementId="com.example.p2.core.perspective.0">
         <children xsi:type="basic:PartSashContainer" xmi:id="_yE5JUFZHEeeghaVRUBwAVA" elementId="com.example.p2.core.partsashcontainer.0">
@@ -12,6 +12,16 @@
         <children xsi:type="basic:Part" xmi:id="_2XAewFZHEeeghaVRUBwAVA" elementId="com.example.p2.core.part.1" contributionURI="bundleclass://com.example.p2.core/com.example.p2.core.SubPart"/>
       </children>
       <children xsi:type="advanced:Perspective" xmi:id="_xL6S4FZHEeeghaVRUBwAVA" elementId="com.example.p2.core.perspective.1">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_ibgrUFbkEeen2bwWB71T9w" elementId="com.example.p2.core.partsashcontainer.1">
+          <children xsi:type="basic:PartStack" xmi:id="_jml-YFbkEeen2bwWB71T9w" elementId="com.example.p2.core.partstack.2">
+            <children xsi:type="basic:Part" xmi:id="_kL6R8FbkEeen2bwWB71T9w" elementId="com.example.p2.core.part.5"/>
+            <children xsi:type="basic:Part" xmi:id="_kc6iYFbkEeen2bwWB71T9w" elementId="com.example.p2.core.part.6"/>
+            <children xsi:type="basic:Part" xmi:id="_k_PMUFbkEeen2bwWB71T9w" elementId="com.example.p2.core.part.8"/>
+          </children>
+          <children xsi:type="basic:PartStack" xmi:id="_j9O8wFbkEeen2bwWB71T9w" elementId="com.example.p2.core.partstack.3">
+            <children xsi:type="basic:Part" xmi:id="_ktPdYFbkEeen2bwWB71T9w" elementId="com.example.p2.core.part.7"/>
+          </children>
+        </children>
         <children xsi:type="basic:PartStack" xmi:id="_0ejvYFZHEeeghaVRUBwAVA" elementId="com.example.p2.core.partstack.1">
           <children xsi:type="basic:Part" xmi:id="_08_X0FZHEeeghaVRUBwAVA" elementId="com.example.p2.core.part.2"/>
           <children xsi:type="basic:Part" xmi:id="_1WAUwFZHEeeghaVRUBwAVA" elementId="com.example.p2.core.part.3"/>
@@ -19,6 +29,12 @@
       </children>
     </children>
     <mainMenu xmi:id="_91Z04FZFEeeghaVRUBwAVA" elementId="com.example.p2.core.menu.0">
+      <children xsi:type="menu:Menu" xmi:id="_eXVrQFbkEeen2bwWB71T9w" elementId="com.example.p2.core.menu.file" label="File">
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_F5m7oFblEeen2bwWB71T9w" elementId="com.example.p2.core.directmenuitem.exit" label="Exit"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_CKdJUFblEeen2bwWB71T9w" elementId="com.example.p2.core.menu.window" label="Window">
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_G7OJoFblEeen2bwWB71T9w" elementId="com.example.p2.core.directmenuitem.perspective" label="Perspective"/>
+      </children>
       <children xsi:type="menu:Menu" xmi:id="_-Y7YsFZFEeeghaVRUBwAVA" elementId="com.example.p2.core.menu.help" label="Help">
         <children xsi:type="menu:DirectMenuItem" xmi:id="_An0SIFZGEeeghaVRUBwAVA" elementId="com.example.p2.core.directmenuitem.update" label="Update" iconURI="platform:/plugin/com.example.p2.core/icons/sample.png" contributionURI="bundleclass://com.example.p2.core/com.example.p2.core.handlers.UpdateHandler"/>
       </children>
